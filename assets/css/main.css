@@ -2685,7 +2685,7 @@ input, select, textarea {
 		margin-left: 25%;
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
-		width: 100%;
+		width: 75%;
 	}
 
 		#main > section {
@@ -3029,7 +3029,7 @@ input, select, textarea {
 				margin-left: 25%;
 				max-width: none;
 				padding: 6em 3em 3em 3em;
-				width: 100%;
+				width: 75%;
 			}
 
 	}
@@ -3111,7 +3111,7 @@ input, select, textarea {
 			#main {
 				margin: 25%;
 				padding: 6em 4em;
-				width: 100%;
+				width: 75%;
 			}
 
 	}
