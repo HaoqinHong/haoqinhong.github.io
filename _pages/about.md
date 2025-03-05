@@ -90,6 +90,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 - *2023.03 - 2024.07*, Image Processing Based on Multimodal Astronomical Large Models, Leader of Innovation Training Program, National Astronomical Observatory, Chinese Academy of Sciences (Advisor: Prof. A-Li Luo).
 - *2023.06 - 2023.12*, Research and Application of Memristor-Based Multi-Layer Attention Networks in Natural Language Processing, Leader of Provincial Innovation Training Program (Advisor: Prof. Xiaofang Hu).
 - *2024.06 - 2025.03*, Design of a Lightweight Memristive Neuromorphic Computing System Based on Retentive Network, Core Member of Provincial Innovation Training Program (Advisor: Prof. Xiaofang Hu).
+- *2023.03 - 2025.04*, Real-Time Robot Object Detection and SLAM 3D Map Building and Navigation, Project Administrator & Head of Vision Group, Robotics Innovation Lab, SWU.
 
 # 💬 Project Showcases
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCNN & WCCI 2024 Oral</div><img src='images/ours_method_ccspnet_joint.png' alt="sym" width="100%"></div></div>
