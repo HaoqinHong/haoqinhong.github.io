@@ -86,6 +86,10 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 - 🥉 National Third Prize in the Chinese Collegiate Computing Contest. 
 - 🏅 Provincial First Prize in the National Undergraduate Electronics Design Contest. 
 
+# 📁 Projects
+- *2023.03 - 2024.07*, Leader of Innovation Training Program, National Astronomical Observatory, Chinese Academy of Sciences (Advisor: Prof. A-Li Luo), Image Processing Based on Multimodal Astronomical Large Models.
+- *2023.06 - 2023.12*, Leader of Provincial Innovation Training Program (Advisor: Prof. Xiaofang Hu), Research and Application of Memristor-Based Multi-Layer Attention Networks in Natural Language Processing.
+- *2024.06 - 2025.03*, Core Member of Provincial Innovation Training Program (Advisor: Prof. Xiaofang Hu), Design of a Lightweight Memristive Neuromorphic Computing System Based on Retentive Network.
 
 # 💬 Project Showcases
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCNN & WCCI 2024 Oral</div><img src='images/ours_method_ccspnet_joint.png' alt="sym" width="100%"></div></div>
@@ -115,4 +119,3 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 # 💻 Research and Internships
 - *2024.03 - Present*, Graduate Research Assistant (Advisor: Prof. Jingrun Chen), Scientific Computing and Artificial Intelligence Lab, Suzhou Institute for Advanced Research, USTC.
 - *2022.03 - 2025.06*, Undergraduate Research Assistant (Advisor: Prof. Xiaofang Hu), Chongqing Key Laboratory of Brain-inspired Computing and Intelligent Control, SWU.
-- *2023.03 - 2024.07*, Leader of Innovation Training Program (Advisor: Prof. A-Li Luo), Image Processing Based on Multimodal Astronomical Large Models, National Astronomical Observatory, Chinese Academy of Sciences.
