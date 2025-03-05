@@ -115,4 +115,4 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 # 💻 Research and Internships
 - *2024.03 - Present*, Graduate Research Assistant (Advisor: Prof. Jingrun Chen), Scientific Computing and Artificial Intelligence Lab, Suzhou Institute for Advanced Research, USTC.
 - *2022.03 - 2025.06*, Undergraduate Research Assistant (Advisor: Prof. Xiaofang Hu), Chongqing Key Laboratory of Brain-inspired Computing and Intelligent Control, SWU.
-- *2023.03 - 2024.07*, Leader of Innovation Training Program (Advisor: Prof. A-Li Luo), National Astronomical Observatory, Chinese Academy of Sciences.
+- *2023.03 - 2024.07*, Leader of Innovation Training Program (Advisor: Prof. A-Li Luo), Image Processing Based on Multimodal Astronomical Large Models, National Astronomical Observatory, Chinese Academy of Sciences.
