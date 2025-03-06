@@ -99,7 +99,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 [CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions](https://ieeexplore.ieee.org/document/10651346), Proceedings of the 2024 IEEE International Joint Conference on Neural Networks.
 
 
-🚩 [**Project**](https://github.com/HaoqinHong/CCSPNet-Joint) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 📜 [**Dataset**](https://www.kaggle.com/datasets/haoqinhong/cctsdb-aug-ijcnn-2024) &nbsp; <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+🚩 [**Project**](https://github.com/HaoqinHong/CCSPNet-Joint) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 📜 [**Dataset**](https://www.kaggle.com/datasets/haoqinhong/cctsdb-aug-ijcnn-2024) &nbsp; <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Authors: &nbsp;&nbsp;**Haoqin Hong @SWU**, Yue Zhou* @SWU, Xiangyu Shu @SWU, Xiaofang Hu @SWU.
 - Keywords:&nbsp;&nbsp; Object Detection, Image Denosing, Static & Dynamic Transformer.
 </div>
