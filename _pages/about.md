@@ -123,6 +123,6 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 - *2024.03 - Present*, Scientific Computing and Artificial Intelligence Lab, Suzhou Institute for Advanced Research, USTC, Graduate Research Assistant (Advisor: Prof. Jingrun Chen).
 - *2022.03 - 2025.06*, Chongqing Key Laboratory of Brain-inspired Computing and Intelligent Control, SWU, Undergraduate Research Assistant (Advisor: Prof. Xiaofang Hu).
 
-# ✨ Open-Source Tools
+# ✨ Open Source Tools
 [Awesome-Physics-Inspired-Vision-Understanding](https://github.com/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding.svg)
 
