@@ -101,7 +101,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 [CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions](https://ieeexplore.ieee.org/document/10651346), Proceedings of the 2024 IEEE International Joint Conference on Neural Networks.
 
 
-🚩 [**Project**](https://github.com/HaoqinHong/CCSPNet-Joint) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 📜 [**Dataset**](https://www.kaggle.com/datasets/haoqinhong/cctsdb-aug-ijcnn-2024) &nbsp; <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+🚩 [**Project**](https://github.com/HaoqinHong/CCSPNet-Joint) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg) &nbsp; 📜 [**Dataset**](https://www.kaggle.com/datasets/haoqinhong/cctsdb-aug-ijcnn-2024)  
 - Authors: &nbsp;&nbsp;**Haoqin Hong @SWU**, Yue Zhou* @SWU, Xiangyu Shu @SWU, Xiaofang Hu @SWU.
 - Keywords:&nbsp;&nbsp; Object Detection, Image Denosing, Static & Dynamic Transformer.
 </div>
@@ -111,7 +111,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 <div class='paper-box-text' markdown="1">Real-Time Robot Object Detection and SLAM 3D Map Building and Navigation, Project Administrator & Head of Vision Group, Robotics Innovation Lab, SWU.
 
 
-🚩 [**Object Detection Project**](https://github.com/HaoqinHong/RoboMasterUnionGKD2023) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> 📜 [**SLAM Navigation Project**](https://github.com/HaoqinHong/RoboMaster-SLAM) &nbsp; <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+🚩 [**Object Detection Project**](https://github.com/HaoqinHong/RoboMasterUnionGKD2023) &nbsp;  📜 [**SLAM Navigation Project**](https://github.com/HaoqinHong/RoboMaster-SLAM) &nbsp;  
 - Current status of team members:  &nbsp;&nbsp; Chengyu Fang @Tsinghua, **Haoqin Hong @USTC**, Bohan Ma @ZJU, Xiangyu Shu @SCUT, Yangce Xiong @UWA, Jiesen Zhao @BHU, Xinke Zhang @XidianU et al.
 - Keywords: &nbsp;&nbsp;	Robotics Vision, SLAM Navigation.
 </div>
@@ -122,3 +122,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 # 💻 Research and Internships
 - *2024.03 - Present*, Scientific Computing and Artificial Intelligence Lab, Suzhou Institute for Advanced Research, USTC, Graduate Research Assistant (Advisor: Prof. Jingrun Chen).
 - *2022.03 - 2025.06*, Chongqing Key Laboratory of Brain-inspired Computing and Intelligent Control, SWU, Undergraduate Research Assistant (Advisor: Prof. Xiaofang Hu).
+
+# ✨ Open-Source Tools
+[Awesome-Physics-Inspired-Vision-Understanding](https://github.com/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding.svg)
+
