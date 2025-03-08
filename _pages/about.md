@@ -88,10 +88,10 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 
 # 📁 Projects
 <ul>
-<li>Leader of Innovation Training Program, National Astronomical Observatory, Chinese Academy of Sciences.<br> Image Processing Based on Multimodal Astronomical Large Models.</li>
-<li>Leader of Provincial Innovation Training Program.<br> Research and Application of Memristor-Based Multi-Layer Attention Networks in Natural Language Processing.</li>
-<li>Core Member of Provincial Innovation Training Program.<br> Design of a Lightweight Memristive Neuromorphic Computing System Based on Retentive Network.</li>
-<li>Project Administrator & Head of Vision Group, Robotics Innovation Lab, SWU.<br> Real-Time Robot Object Detection and SLAM 3D Map Building and Navigation.</li>
+<li>Leader of Innovation Training Program, National Astronomical Observatory, Chinese Academy of Sciences:<br> Image Processing Based on Multimodal Astronomical Large Models.</li>
+<li>Leader of Provincial Innovation Training Program:<br> Research and Application of Memristor-Based Multi-Layer Attention Networks in Natural Language Processing.</li>
+<li>Core Member of Provincial Innovation Training Program:<br> Design of a Lightweight Memristive Neuromorphic Computing System Based on Retentive Network.</li>
+<li>Project Administrator & Head of Vision Group, Robotics Innovation Lab, SWU:<br> Real-Time Robot Object Detection and SLAM 3D Map Building and Navigation.</li>
 </ul>
 
 # 💬 Project Showcases
