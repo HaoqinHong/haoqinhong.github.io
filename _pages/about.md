@@ -82,13 +82,13 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 
 ## Selected Awards
 
-- 🥉 Bronze Medal in Kaggle Research Competition: Google - Fast or Slow? Predict AI Model Runtime. 🗞️ [Certificate](https://drive.google.com/file/d/1bVhp1szeuMiGTC9BnpKw3ZuZCU45DIVT/view?usp=drive_link)
-- 🏅 National First Prize in the DJI RoboMaster of the National University Student Robot Competition. 🗞️ [Certificate](https://drive.google.com/file/d/1jp6YTxhJbt4h8cPMk_cd8M2WcJYbGcce/view?usp=drive_link)
-- 🏅 National First Prize in the China Robotics and Artificial Intelligence Competition. 🗞️ [Certificate](https://drive.google.com/file/d/1IsUCfM5PHM51VjiVHML5qq6Iu9WwqkfQ/view?usp=drive_link)
-- 🥈 National Second Prize in the China/Contemporary Undergraduate Mathematical Contest in Modeling. 🗞️ [Certificate](https://drive.google.com/file/d/1AcmYw2aXkjVvm0_QwovH7GCmZkiev8rw/view?usp=drive_link)
-- 🥉 National Third Prize in the “Challenge Cup” Specialized Competition - Huawei Track. 🗞️ [Certificate](https://drive.google.com/file/d/1l0ApgT6I-xeCJXWjjMd2vpmplqRpdZ7i/view?usp=drive_link)
-- 🥉 National Third Prize in the Chinese Collegiate Computing Contest. 🗞️ [Certificate](https://drive.google.com/file/d/1tEGXcpMYiKKsw-pxJp00DCxYjipz3AsJ/view?usp=drive_link)
-- 🏅 Provincial First Prize in the National Undergraduate Electronics Design Contest. 🗞️ [Certificate](https://drive.google.com/file/d/1z63iSnNTUU0KVYPWV9ybjMdx0S1ybMXu/view?usp=drive_link)
+- Bronze Medal in Kaggle Research Competition: Google - Fast or Slow? Predict AI Model Runtime. 🥉 [Certificate](https://drive.google.com/file/d/1bVhp1szeuMiGTC9BnpKw3ZuZCU45DIVT/view?usp=drive_link)
+- National First Prize in the DJI RoboMaster of the National University Student Robot Competition. 🏅 [Certificate](https://drive.google.com/file/d/1jp6YTxhJbt4h8cPMk_cd8M2WcJYbGcce/view?usp=drive_link)
+- National First Prize in the China Robotics and Artificial Intelligence Competition. 🏅 [Certificate](https://drive.google.com/file/d/1IsUCfM5PHM51VjiVHML5qq6Iu9WwqkfQ/view?usp=drive_link)
+- National Second Prize in the China/Contemporary Undergraduate Mathematical Contest in Modeling. 🥈 [Certificate](https://drive.google.com/file/d/1AcmYw2aXkjVvm0_QwovH7GCmZkiev8rw/view?usp=drive_link)
+- National Third Prize in the “Challenge Cup” Specialized Competition - Huawei Track. 🥉 [Certificate](https://drive.google.com/file/d/1l0ApgT6I-xeCJXWjjMd2vpmplqRpdZ7i/view?usp=drive_link)
+- National Third Prize in the Chinese Collegiate Computing Contest. 🥉 [Certificate](https://drive.google.com/file/d/1tEGXcpMYiKKsw-pxJp00DCxYjipz3AsJ/view?usp=drive_link)
+- Provincial First Prize in the National Undergraduate Electronics Design Contest. 🏅 [Certificate](https://drive.google.com/file/d/1z63iSnNTUU0KVYPWV9ybjMdx0S1ybMXu/view?usp=drive_link)
 
 # 📁 Projects
 <ul>
