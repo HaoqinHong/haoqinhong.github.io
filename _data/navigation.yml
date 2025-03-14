@@ -6,6 +6,9 @@ main:
   - title: "Educations"
     url: "/#-educations"
 
+  - title: "Research and Internships"
+    url: "/#-research-and-internships"
+
   - title: "News"
     url: "/#-news"
 
@@ -20,9 +23,6 @@ main:
 
   - title: "Project Showcases"
     url: "/#-project-showcases"
-
-  - title: "Research and Internships"
-    url: "/#-research-and-internships"
   
   - title: "Open Source Tools"
     url: "/#-open-source-tools"

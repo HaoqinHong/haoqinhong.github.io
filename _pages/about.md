@@ -35,6 +35,10 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 - *2022.09 - 2023.01*, University of California, Los Angeles (UCLA), Visiting Student in Data Science.
 - *2015.09 - 2021.07*, Chengdu Experimental Foreign Languages School, Science Experimental Class, Senior High School & Junior High School.
 
+# 💻 Research and Internships
+- *2024.03 - Present*, Scientific Computing and Artificial Intelligence Lab, Suzhou Institute for Advanced Research, USTC, Graduate Research Assistant (Advisor: Prof. Jingrun Chen).
+- *2022.03 - 2025.06*, Chongqing Key Laboratory of Brain-inspired Computing and Intelligent Control, SWU, Undergraduate Research Assistant (Advisor: Prof. Xiaofang Hu).
+
 
 # 🔥 News
 - *2024.9*: &nbsp; 🎉 I have been admitted to the USTC to pursue a M.Phil in Intelligent Science and Technology.
@@ -117,11 +121,6 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 </div>
 </div>
 
-
-
-# 💻 Research and Internships
-- *2024.03 - Present*, Scientific Computing and Artificial Intelligence Lab, Suzhou Institute for Advanced Research, USTC, Graduate Research Assistant (Advisor: Prof. Jingrun Chen).
-- *2022.03 - 2025.06*, Chongqing Key Laboratory of Brain-inspired Computing and Intelligent Control, SWU, Undergraduate Research Assistant (Advisor: Prof. Xiaofang Hu).
 
 # ✨ Open Source Tools
 [Awesome-Physics-Inspired-Vision-Understanding](https://github.com/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding.svg)
