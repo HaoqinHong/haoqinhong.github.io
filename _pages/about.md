@@ -30,14 +30,14 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 </div>
 
 # 📖 Educations
-- *2025.09 - 2028.06 (now)*, University of Science and Technology of China (USTC), School of Artificial Intelligence and Data Science, Master of Philosophy in Intelligence Science and Technology – Artificial Intelligence. 
-- *2021.09 - 2025.06*, Southwest University (SWU), Yuan-Longping Program, Bachelor of Engineering in Computer Science and Technology. 
-- *2022.09 - 2023.01*, University of California, Los Angeles (UCLA), Visiting Student in Data Science.
-- *2015.09 - 2021.07*, Chengdu Experimental Foreign Languages School, Science Experimental Class, Senior High School & Junior High School.
+- *2025.09 - 2028.06 (now)*, Master of Philosophy in Intelligence Science and Technology – Artificial Intelligence, School of Artificial Intelligence and Data Science, University of Science and Technology of China (USTC). 
+- *2021.09 - 2025.06*, Bachelor of Engineering in Computer Science and Technology, Yuan-Longping Program, Southwest University (SWU). 
+- *2022.09 - 2023.01*, Visiting Student in Data Science, University of California, Los Angeles (UCLA).
+- *2015.09 - 2021.07*, Science Experimental Class, Senior High School & Junior High School, Chengdu Experimental Foreign Languages School.
 
 # 💻 Research and Internships
-- *2024.03 - Present*, Scientific Computing and Artificial Intelligence Lab, Suzhou Institute for Advanced Research, USTC, Graduate Research Assistant (Advisor: Prof. Jingrun Chen).
-- *2022.03 - 2025.06*, Chongqing Key Laboratory of Brain-inspired Computing and Intelligent Control, SWU, Undergraduate Research Assistant (Advisor: Prof. Xiaofang Hu).
+- *2024.03 - Present*, Graduate Research Assistant, Scientific Computing and Artificial Intelligence Lab, Suzhou Institute for Advanced Research, USTC. (Advisor: Prof. Jingrun Chen)
+- *2022.03 - 2025.06*, Undergraduate Research Assistant, Chongqing Key Laboratory of Brain-inspired Computing and Intelligent Control, SWU. (Advisor: Prof. Xiaofang Hu)
 
 
 # 🔥 News
