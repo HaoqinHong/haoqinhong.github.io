@@ -74,26 +74,26 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 
 ## Selected Honors
 
-- Outstanding Individual in Enhancing Innovation Ability of College Students in Chongqing. 🗞️ [Certificate](https://drive.google.com/file/d/1jFWPXBWftP6zDSv7MZqixuptVfcGQy4V/view?usp=drive_link)
-- Southwest University First Class Scholarship, Second Class Scholarship, Third Class Scholarship. 🗞️ [Certificate](https://drive.google.com/file/d/1g4_PpJxElEXTGyV26aN4vFou5mJ8SfOi/view?usp=drive_link)
+- [🗞️](https://drive.google.com/file/d/1jFWPXBWftP6zDSv7MZqixuptVfcGQy4V/view?usp=drive_link) Outstanding Individual in Enhancing Innovation Ability of College Students in Chongqing.  
+- [🗞️](https://drive.google.com/file/d/1g4_PpJxElEXTGyV26aN4vFou5mJ8SfOi/view?usp=drive_link) Southwest University First Class Scholarship, Second Class Scholarship, Third Class Scholarship.  
 - Special First Class Scholarship for Overseas Study or Internship of Han Hong College.
 - Southwest University Innovation and Entrepreneurship Award.
 - Southwest University Academic Science and Technology Award.
 
 ## Selected Awards
 
-- Bronze Medal in Kaggle Research Competition: Google - Fast or Slow? Predict AI Model Runtime. 🥉 [Certificate](https://drive.google.com/file/d/1bVhp1szeuMiGTC9BnpKw3ZuZCU45DIVT/view?usp=drive_link)
-- National First Prize in the DJI RoboMaster of the National University Student Robot Competition. 🏅 [Certificate](https://drive.google.com/file/d/1jp6YTxhJbt4h8cPMk_cd8M2WcJYbGcce/view?usp=drive_link)
-- National First Prize in the China Robotics and Artificial Intelligence Competition. 🏅 [Certificate](https://drive.google.com/file/d/1IsUCfM5PHM51VjiVHML5qq6Iu9WwqkfQ/view?usp=drive_link)
-- National Second Prize in the China/Contemporary Undergraduate Mathematical Contest in Modeling. 🥈 [Certificate](https://drive.google.com/file/d/1AcmYw2aXkjVvm0_QwovH7GCmZkiev8rw/view?usp=drive_link)
-- National Third Prize in the “Challenge Cup” Specialized Competition - Huawei Track. 🥉 [Certificate](https://drive.google.com/file/d/1l0ApgT6I-xeCJXWjjMd2vpmplqRpdZ7i/view?usp=drive_link)
-- National Third Prize in the Chinese Collegiate Computing Contest. 🥉 [Certificate](https://drive.google.com/file/d/1tEGXcpMYiKKsw-pxJp00DCxYjipz3AsJ/view?usp=drive_link)
-- Provincial First Prize in the National Undergraduate Electronics Design Contest. 🏅 [Certificate](https://drive.google.com/file/d/1z63iSnNTUU0KVYPWV9ybjMdx0S1ybMXu/view?usp=drive_link)
+- [🥉](https://drive.google.com/file/d/1bVhp1szeuMiGTC9BnpKw3ZuZCU45DIVT/view?usp=drive_link) Bronze Medal in Kaggle Research Competition: Google - Fast or Slow? Predict AI Model Runtime.  
+- [🏅](https://drive.google.com/file/d/1jp6YTxhJbt4h8cPMk_cd8M2WcJYbGcce/view?usp=drive_link) National First Prize in the DJI RoboMaster of the National University Student Robot Competition. 
+- [🏅](https://drive.google.com/file/d/1IsUCfM5PHM51VjiVHML5qq6Iu9WwqkfQ/view?usp=drive_link) National First Prize in the China Robotics and Artificial Intelligence Competition. 
+- [🥈](https://drive.google.com/file/d/1AcmYw2aXkjVvm0_QwovH7GCmZkiev8rw/view?usp=drive_link) National Second Prize in the China/Contemporary Undergraduate Mathematical Contest in Modeling. 
+- [🥉](https://drive.google.com/file/d/1l0ApgT6I-xeCJXWjjMd2vpmplqRpdZ7i/view?usp=drive_link) National Third Prize in the “Challenge Cup” Specialized Competition - Huawei Track. 
+- [🥉](https://drive.google.com/file/d/1tEGXcpMYiKKsw-pxJp00DCxYjipz3AsJ/view?usp=drive_link) National Third Prize in the Chinese Collegiate Computing Contest. 
+- [🏅](https://drive.google.com/file/d/1z63iSnNTUU0KVYPWV9ybjMdx0S1ybMXu/view?usp=drive_link) Provincial First Prize in the National Undergraduate Electronics Design Contest.  
 
 # 📁 Projects
 <ul>
-<li>Image Processing Based on Multimodal Astronomical Large Models. 🗞️ <a href="https://drive.google.com/file/d/1nukWL2_sUHJ17Lrmu1Iue-idG_a-oslJ/view?usp=drive_link">Certificate</a></li>
-<li>Research and Application of Memristor-Based Multi-Layer Attention Networks in Natural Language Processing. 🗞️ <a href="https://drive.google.com/file/d/1T1anwFBgLZYTXlGBLIFVm5yXVL2saSjf/view?usp=drive_link">Certificate</a></li>
+<li><a href="https://drive.google.com/file/d/1nukWL2_sUHJ17Lrmu1Iue-idG_a-oslJ/view?usp=drive_link">🗞️</a> Image Processing Based on Multimodal Astronomical Large Models.</li>
+<li><a href="https://drive.google.com/file/d/1T1anwFBgLZYTXlGBLIFVm5yXVL2saSjf/view?usp=drive_link">🗞️</a> Research and Application of Memristor-Based Multi-Layer Attention Networks in Natural Language Processing.</li>
 <li>Design of a Lightweight Memristive Neuromorphic Computing System Based on Retentive Network.</li>
 <li>Real-Time Robot Object Detection and SLAM 3D Map Building and Navigation.</li>
 </ul>
