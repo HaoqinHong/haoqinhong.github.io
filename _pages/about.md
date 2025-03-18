@@ -51,14 +51,23 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 ## Articles
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge" 
+  <!-- <li><code class="language-plaintext highlighter-rouge" 
       style="background-color: #001f3f; 
              color: #ffffff; 
              padding: 2px 4px; 
              border-radius: 4px;">
  IJCNN & WCCI 2024 Oral, CCF-C
-  </code> <strong>Haoqin Hong</strong>, Yue Zhou*, Xiangyu Shu, Xiaofang Hu. <a href="https://ieeexplore.ieee.org/document/10651346"> "CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions."</a>  Proceedings of the 2024 IEEE International Joint Conference on Neural Networks. </li>
-
+  </code> <strong>Haoqin Hong</strong>, Yue Zhou*, Xiangyu Shu, Xiaofang Hu. <a href="https://ieeexplore.ieee.org/document/10651346"> "CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions."</a>  Proceedings of the 2024 IEEE International Joint Conference on Neural Networks. </li> -->
+<li><code class="language-plaintext highlighter-rouge" 
+      style="background-color: #001f3f; 
+             color: #ffffff; 
+             padding: 2px 4px; 
+             border-radius: 4px;">
+ CCF-C
+  </code>
+ <a href="https://ieeexplore.ieee.org/document/10651346"> CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions.</a>
+<br><strong>Haoqin Hong</strong>, Yue Zhou*, Xiangyu Shu, Xiaofang Hu.
+<br> Proceedings of the 2024 IEEE International Joint Conference on Neural Networks, IJCNN & WCCI 2024 Oral, Yokohama, Japan.
   </ul>
 
 ## Chinese Invention Patent
