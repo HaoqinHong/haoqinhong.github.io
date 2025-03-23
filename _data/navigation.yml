@@ -24,5 +24,8 @@ main:
   - title: "Project Showcases"
     url: "/#-project-showcases"
   
+  - title: "Teaching Experience"
+    url: "/#-teaching-experience"
+
   - title: "Open Source Tools"
     url: "/#-open-source-tools"

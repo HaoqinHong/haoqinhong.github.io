@@ -101,7 +101,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 [CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions](https://ieeexplore.ieee.org/document/10651346), Proceedings of the 2024 IEEE International Joint Conference on Neural Networks.
 
 
-🚩 [**Project**](https://github.com/HaoqinHong/CCSPNet-Joint) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg) &nbsp; 📜 [**Dataset**](https://www.kaggle.com/datasets/haoqinhong/cctsdb-aug-ijcnn-2024)  
+🚩 [**Code**](https://github.com/HaoqinHong/CCSPNet-Joint) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg) &nbsp; 📜 [**Dataset**](https://www.kaggle.com/datasets/haoqinhong/cctsdb-aug-ijcnn-2024)  
 - Authors: &nbsp;&nbsp;**Haoqin Hong @SWU**, Yue Zhou* @SWU, Xiangyu Shu @SWU, Xiaofang Hu @SWU.
 - Keywords:&nbsp;&nbsp; Object Detection, Image Denosing, Static & Dynamic Transformer.
 </div>
@@ -117,6 +117,8 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 </div>
 </div>
 
+# 🕮 Teaching Experience
+- Geometry Generation Project Teaching Assistant, School of the Gifted Young, USTC.
 
 # ✨ Open Source Tools
 [Awesome-Physics-Inspired-Vision-Understanding](https://github.com/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding) ![Github stars](https://img.shields.io/github/stars/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding.svg)
