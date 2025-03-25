@@ -94,7 +94,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 <li>Real-Time Robot Object Detection and SLAM 3D Map Building and Navigation.</li>
 </ul>
 
-# 💬 Project Showcases
+# 🎓 Project Showcases
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCNN & WCCI 2024 Oral</div><img src='images/ours_method_ccspnet_joint.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
