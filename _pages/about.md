@@ -41,6 +41,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 
 
 # 🔥 News
+- *2025.4*: &nbsp; 🎉 I was selected as an outstanding graduate of Southwest University in the 25th cohort.
 - *2024.9*: &nbsp; 🎉 I have been admitted to the USTC to pursue a M.Phil in Intelligent Science and Technology.
 - *2024.7*: &nbsp; 🎉 I present at the World Congress on Computational Intelligence held in Yokohama, Japan. 
 - *2024.3*: &nbsp; 🎉 My paper was accepted by IEEE IJCNN 2024.
@@ -71,6 +72,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 ## Selected Honors
 
 - Outstanding Individual in Enhancing Innovation Ability of College Students in Chongqing.  [[Link]](https://drive.google.com/file/d/1jFWPXBWftP6zDSv7MZqixuptVfcGQy4V/view?usp=drive_link)
+- Outstanding Graduates in Southwest University.
 - Southwest University First Class Scholarship, Second Class Scholarship, Third Class Scholarship.  [[Link]](https://drive.google.com/file/d/1g4_PpJxElEXTGyV26aN4vFou5mJ8SfOi/view?usp=drive_link)
 - Special First Class Scholarship for Overseas Study or Internship of Han Hong College.
 - Southwest University Innovation and Entrepreneurship Award.
