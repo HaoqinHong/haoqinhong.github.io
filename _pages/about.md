@@ -41,7 +41,7 @@ Haoqin Hong's research will focus on physics-inspired vision understanding and e
 
 
 # 🔥 News
-- *2025.4*: &nbsp; 🎉 I was selected as an outstanding graduate of Southwest University in the 25th cohort.
+- *2025.4*: &nbsp; 🎉 I was selected as an Outstanding Graduate of Southwest University.
 - *2024.9*: &nbsp; 🎉 I have been admitted to the USTC to pursue a M.Phil in Intelligent Science and Technology.
 - *2024.7*: &nbsp; 🎉 I present at the World Congress on Computational Intelligence held in Yokohama, Japan. 
 - *2024.3*: &nbsp; 🎉 My paper was accepted by IEEE IJCNN 2024.
