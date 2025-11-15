@@ -30,7 +30,7 @@
 							<li><a href="#two" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;">   🕮 Education Experience</span></a></li>
 							<li><a href="#three" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;"> 💻 Research & Internship</span></a></li>
 							<li><a href="#four" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;">  🏅 Publication & Awards</span></a></li>
-							<li><a href="#five" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;">  👨‍🎨 Project Showcase 👨‍🎨</span></a></li>
+							<!-- <li><a href="#five" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;">  👨‍🎨 Project Showcase 👨‍🎨</span></a></li> -->
 						</ul>
 					</h6>					
 				</div>
@@ -241,82 +241,120 @@
 					
 							<h2 style="line-height: 1; color: #000000aa; font-weight: 400;"> Publications</h2>
 							<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Articles (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)</h3>
+							
+							<div style="
+								display: flex;
+								align-items: flex-start;
+								gap: 30px;
+								margin: 30px 0;
+								max-width: 950px;   /* 控制整体不撑满页面 */
+							">
+
+								<!-- 左侧图片：宽度收窄到 40% -->
+								<div style="flex: 0 0 35%; position: relative;">
+									<img src="images/PIDG_insights.png" 
+										style="width: 100%; border-radius: 8px;">
+
+									<!-- 图片角标 -->
+									<div style="
+										position: absolute;
+										top: 10px;
+										left: 10px;
+										background-color: #005792;
+										color: #fff;
+										padding: 3px 8px;
+										font-size: 14px;
+										font-weight: 600;
+										border-radius: 5px;
+									">
+										AAAI-26 Poster
+									</div>
+								</div>
+
+								<!-- 右侧文字：占 60% 左右 -->
+								<div style="flex: 1; padding-top: 8px;">
+
+									<h3 style="font-size: 18px; margin: 0 0 10px;">
+										Physics-Informed Deformable Gaussian Splatting:<br>
+										Towards Unified Constitutive Laws for Time-Evolving Material Field.
+									</h3>
+
+									<p style="font-size: 16px; line-height: 1.6; color: #000000aa;">
+										<span style="color: #000000aa; font-weight: 600;">Haoqin Hong*</span>, Ding Fan*, Fubin Dou, Zhi-Li Zhou, 
+										Haoran Sun, Congcong Zhu†, Jingrun Chen†. &nbsp; AAAI Conference on Artificial Intelligence, AAAI-26  
+										<span style="font-weight: 700; color: #000;"> &nbsp;(CCF-A, Acceptance Rate 16.7%)</span> 										<a href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting">
+											<img src="https://img.shields.io/github/stars/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting.svg"
+												style="vertical-align: middle;">
+										</a>
+									</p>
+								</div>
+							</div>
+
+							<div style="
+							display: flex;
+							align-items: flex-start;
+							gap: 30px;
+							margin: 30px 0;
+							max-width: 950px;
+						">
+
+							<!-- 左侧图片：35% 宽度 -->
+							<div style="flex: 0 0 35%; position: relative;">
+								<img src="images/ours_method_ccspnet_joint.png" 
+									style="width: 100%; border-radius: 8px;">
+
+								<!-- 图片角标 -->
+								<div style="
+									position: absolute;
+									top: 10px;
+									left: 10px;
+									background-color: #005792;
+									color: #fff;
+									padding: 3px 8px;
+									font-size: 14px;
+									font-weight: 600;
+									border-radius: 5px;
+								">
+									IJCNN & WCCI Oral
+								</div>
+							</div>
+
+							<!-- 右侧文字区 -->
+							<div style="flex: 1; padding-top: 8px;">
+
+								<h3 style="font-size: 18px; margin: 0 0 10px;">
+									CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection
+									Under Extreme Conditions.
+								</h3>
+
+								<p style="font-size: 16px; line-height: 1.6; color: #000000aa;">
+
+									<span style="color: #000000aa; font-weight: 600;">Haoqin Hong</span>,
+									Yue Zhou*, Xiangyu Shu, Xiaofang Hu.
+
+									<br>
+
+									IEEE International Joint Conference on Neural Networks (IJCNN) 2024 Oral  
+									& World Congress on Computational Intelligence (WCCI) 2024  
+									<span style="font-weight: 700; color: #000;">(CCF-C Conference)</span>
+
+									&nbsp;
+									<a href="https://github.com/HaoqinHong/CCSPNet-Joint">
+										<img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg"
+											style="vertical-align: middle;">
+									</a>
+								</p>
+
+							</div>
+						</div>
+
+												
+							
 							<ol>
-								<li style="color: #000000aa;">
-								Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field. 
-								<a style="font-size: 16px; line-height: 1;" href="https://arxiv.org/abs/2511.06299">📑</a>
-								<a style="font-size: 16px; line-height: 1;" class="icon brands fa-github" href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting"><span class="label">Github</span></a>
-								   <br> <span style="color: #000000aa; font-weight: 600;">Haoqin Hong<sup>*</sup></span>, Din Fan<sup>*</sup>, Fubing Dou, Zhili Zhou, Haoran Sun, Congcong Zhu<sup>†</sup> , Jingrun Chen<sup>†</sup>.
-								   &nbsp; AAAI Conference on Artificial Intelligence, AAAI 2026 &nbsp; <span style="color: #000000aa; font-weight: 600;">(CCF-A, Acceptance Rate: 17.6%)</span>
-								   <!-- <span style="
-									display: inline-block;
-									background-color: rgba(231, 240, 235, 0.8);
-									color: #808080;
-									padding: 4px 8px;
-									border-radius: 6px;
-									font-size: 13px;
-									font-weight: 500;
-									font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-									box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-									line-height: 1;
-									">
-									CCF-A Conference, Acceptance Rate: 17.6%
-									</span>										 -->
-								</li>
-
-								<li style="color: #000000aa;">
-								CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions. 
-								<a style="font-size: 16px; line-height: 1;" class="icon brands fa-github" href="https://github.com/HaoqinHong/CCSPNet-Joint"><span class="label">Github</span></a>
-								   <br> <span style="color: #000000aa; font-weight: 600;">Haoqin Hong</span>, Yue Zhou<sup>†</sup> , Xiangyu Shu, Xiaofang Hu.
-								   &nbsp; IJCNN & WCCI 2024 Oral &nbsp; <span style="color: #000000aa; font-weight: 600;">(CCF-C)</span>
-								   <!-- <span style="
-									display: inline-block;
-									background-color: rgba(231, 240, 235, 0.8);
-									color: #808080;
-									padding: 4px 8px;
-									border-radius: 6px;
-									font-size: 13px;
-									font-weight: 500;
-									font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-									box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-									line-height: 1;
-									">
-									CCF-C Conference
-									</span>									 -->
-								</li>
-
 								<li style="color: #000000aa;">
 								Attaining Hardware-Efficient Inference in Memristor-Based Transformer Accelerator via Network Redesign. 
 								   <br> Junze Xu, <span style="color: #000000aa; font-weight: 600;">Haoqin Hong</span>, Yue Zhou<sup>†</sup> , Xiaofang Hu, Shukai Duan.
 								   &nbsp; Neurocomputing &nbsp; <span style="color: #000000aa; font-weight: 600;">(JCR Q1, CCF-C, IF 5.5)</span>
-									<!-- <span style="
-									display: inline-block;
-									background-color: rgba(231, 240, 235, 0.8);
-									color: #808080;
-									padding: 4px 8px;
-									border-radius: 6px;
-									font-size: 13px;
-									font-weight: 500;
-									font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-									box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-									line-height: 1;
-									">
-									CAS SCI Q2, IF 5.5
-									</span>
-									<span style="
-									display: inline-block;
-									background-color: rgba(231, 240, 235, 0.8);
-									color: #808080;
-									padding: 4px 8px;
-									border-radius: 6px;
-									font-size: 13px;
-									font-weight: 500;
-									font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-									box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-									line-height: 1;
-									">
-									CCF-C Journal
-									</span> -->
 								</li>
 							</ol>
 
@@ -357,133 +395,9 @@
 									<li> <b style="color: #000000aa; font-weight: 600;">Attention Networks based on Memristors in Natural Language Processing. </b><a href="https://drive.google.com/file/d/1T1anwFBgLZYTXlGBLIFVm5yXVL2saSjf/view?usp=sharing"> [Certificate]</a><br>Provincial Innovation Training Program Leader, Outstanding Project Closure.</li>
 									<li> <b style="color: #000000aa; font-weight: 600;">Real-Time Robot Object Detection and SLAM 3D Map Building for Navigation. </b></a><br> Leader of Algorithm Group, Robotics Innovation Lab, SWU, Outstanding Innovative Team.</li>
 								</ul> -->
-	
-								<hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>
 					</section>
 
-					<section id="five" style="color: #000000aa;">
-						<br>
-							<h1 style="line-height: 1; color: #000000;">Representative Work Showcase</h1>
-							<div class="row" >
-								<article class="col-6" style="position: relative;" style="color: #000000aa;">
-								  <!-- 图片本身 -->
-								  <img src="images/PIDG_insights.png" alt="Research Image" style="width: 90%; height: 90%;">
-								  
-								  <!-- 图片角标 -->
-								  <div style="
-								  position: absolute;
-								  top: 8px;
-								  left: 8px;
-								  background-color: #005792;
-								  color: #ffffff;
-								  padding: 2px 6px;
-								  font-size: 13px;
-								  font-weight: 600;
-								  border-radius: 4px;
-								  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-								">
-								  AAAI-26 Poster
-								</div>
-								</article>
-							  
-								<article class="col-6" style="width: 50%;" style="color: #000000aa;">
-								  <h3 style="font-size: 18px; line-height: 1.5;">
-									<span style="font-size: 16px; color: #000; font-weight: 600;">
-									  Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field.
-									</span> &nbsp;<a href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting"><img src="https://img.shields.io/github/stars/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting.svg" alt="Github stars"></a>
-									<br>
-									<span class="bold-text" style="font-size: 16px;"> AAAI Conference on Artifial Intelligence, AAAI-26</span>
-									<br>
-									<span style="font-size: 16px; line-height: 1.5;">
-									  <span style="font-size: 16px;"> Authors: </span> &nbsp;&nbsp;<span class="bold-text">Haoqin Hong*</span>, Din Fan*, Fubing Dou, Zhili Zhou, Haoran Sun, Congcong Zhu† , Jingrun Chen†.
-									</span>	
-									<!-- <br> 
-									<span style="font-size: 16px;"> Keywords:&nbsp;&nbsp; Object Detection, Image Denosing. </span>						 -->
-								  </h3>
-								</article>
-							  </div><br>
-							
 
-							<div class="row" >
-								<article class="col-6" style="position: relative;" style="color: #000000aa;">
-								  <!-- 图片本身 -->
-								  <img src="images/ours_method_ccspnet_joint.png" alt="Research Image" style="width: 100%; height: 90%;">
-								  
-								  <!-- 图片角标 -->
-								  <div style="
-								  position: absolute;
-								  top: 8px;
-								  left: 8px;
-								  background-color: #005792;
-								  color: #ffffff;
-								  padding: 2px 6px;
-								  font-size: 13px;
-								  font-weight: 600;
-								  border-radius: 4px;
-								  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-								">
-								  IJCNN & WCCI Oral 
-								</div>
-								</article>
-							  
-								<article class="col-6" style="width: 50%;" style="color: #000000aa;">
-								  <h3 style="font-size: 18px; line-height: 1.5;">
-									<span style="font-size: 16px; color: #000; font-weight: 600;">
-									  CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions.
-									</span>
-									<br>
-									<span class="bold-text" style="font-size: 16px;"> IEEE IJCNN 2024 Oral & WCCI 2024</span> &nbsp;<a href="https://github.com/HaoqinHong/CCSPNet-Joint"><img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg" alt="Github stars"></a>
-									<br>
-									<span style="font-size: 16px; line-height: 1.5;">
-									  <span style="font-size: 16px;"> Authors: </span> &nbsp;&nbsp;<span class="bold-text">Haoqin Hong</span>, Yue Zhou*, Xiangyu Shu, Xiaofang Hu.
-									</span>	
-									<!-- <br> 
-									<span style="font-size: 16px;"> Keywords:&nbsp;&nbsp; Object Detection, Image Denosing. </span>						 -->
-								  </h3>
-								</article>
-							  </div><br>
-							  
-							<div class="row">
-								<article class="col-6" style="position: relative;" style="color: #000000aa;">
-								  <!-- 包裹图片和角标的相对定位容器 -->
-								  <div style="position: relative;">
-									<img src="images/Robot.jpg" alt="Research Image" style="width: 70%; height: 70%;">
-									
-									<!-- 图片角标 -->
-									<div style="
-									  position: absolute;
-									  top: 8px;
-									  left: 8px;
-									  background-color: #005792;
-									  color: #ffffff;
-									  padding: 2px 6px;
-									  font-size: 13px;
-									  font-weight: 600;
-									  border-radius: 4px;
-									  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-									">
-									  DJI RoboMaster
-									</div>
-								  </div>
-								</article>
-							  
-								<article class="col-6" style="width: 50%;">
-								  <h3 style="font-size: 18px; line-height: 1.5;">
-									<span style="font-size: 16px; color: #000; font-weight: 600;">
-									  Real-Time Robot Object Detection and SLAM 3D Map Building for Navigation. &nbsp;<a href="https://github.com/HaoqinHong/RoboMaster-SLAM"><img src="https://img.shields.io/github/stars/HaoqinHong/RoboMaster-SLAM.svg" alt="Github stars"></a>
-									</span><br> 
-									<span class="bold-text" style="font-size: 16px;">
-									  Head of Vision Group, Robotics Innovation Lab, SWU 
-									</span>								
-									<br>
-									<span style="font-size: 16px; line-height: 1.5;">
-									  <span style="font-size: 16px;">Team Members: </span> &nbsp;&nbsp;
-									  Chengyu Fang (Lab Leader), <span class="bold-text">Haoqin Hong</span>, Bohan Ma, Xiangyu Shu, Yangce Xiong, Jiesen Zhao, Xinke Zhang et al.
-									</span> 
-								  </h3>
-								</article>
-							  </div>
-							  <br>
 
 							  <hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>
 							  
