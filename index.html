@@ -232,110 +232,125 @@
 							<h2 style="line-height: 1; color: #000000aa; font-weight: 400;"> Publications</h2>
 							<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Articles (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)</h3>
 							
-							<div style="
-								display: flex;
-								align-items: flex-start;
-								gap: 30px;
-								margin: 30px 0;
-								max-width: 1250px;   /* 控制整体不撑满页面 */
-							">
+						<!-- 整体容器：两张图并列 -->
+						<div style="
+							display: flex;
+							justify-content: center;
+							align-items: flex-start;
+							gap: 40px;
+							margin: 40px auto;
+							max-width: 1200px;
+						">
 
-								<!-- 左侧图片：宽度收窄到 40% -->
-								<div style="flex: 0 0 40%; position: relative;">
-									<img src="images/PIDG_insights.png" 
-										style="width: 100%; border-radius: 8px;">
+							<!-- ================= 左侧卡片 ================= -->
+							<div style="flex: 1; text-align: center;">
 
-									<!-- 图片角标 -->
+								<!-- 固定高度的图片容器 -->
+								<div style="
+									width: 100%;
+									max-width: 480px;
+									height: 260px;          /* ⭐ 控制图片区域高度统一 */
+									margin: 0 auto;
+									display: flex;
+									justify-content: center;
+									align-items: center;     /* ⭐ 图片垂直居中 */
+									background: #f8f8f8;     /* 可选：浅底色让图片更稳 */
+									border-radius: 10px;
+									overflow: hidden;
+									position: relative;
+								">
+									<img src="images/PIDG_insights.png"
+										style="
+											max-width: 100%;
+											max-height: 100%;
+											object-fit: contain;    /* ⭐ 完整显示图片，不裁剪 */
+											display: block;
+										">
+									
+									<!-- 角标 -->
 									<div style="
-										position: absolute;
-										top: 10px;
-										left: 10px;
-										background-color: #005792;
-										color: #fff;
-										padding: 3px 8px;
-										font-size: 12px;
-										font-weight: 600;
-										border-radius: 5px;
-									">
+										position: absolute; top: 10px; left: 10px;
+										background-color: #005792; color: #fff;
+										padding: 3px 8px; font-size: 12px;
+										font-weight: 600; border-radius: 5px;">
 										AAAI-26 Poster
 									</div>
 								</div>
 
-								<!-- 右侧文字：占 60% 左右 -->
-								<div style="flex: 1; padding-top: 8px;">
-
-									<h4 style="margin: 0 0 10px;">
+								<!-- 文本区域 -->
+								<div style="margin-top: 10px; text-align: left;">
+									<span style="margin: 0 0 8px; color: #000000aa;">
 										Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field.
-										&nbsp; <a href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting">
+										<a href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting">
 											<img src="https://img.shields.io/github/stars/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting.svg"
 												style="vertical-align: middle;">
 										</a>
-									</h4>
-								
+									</span>
 
 									<p style="line-height: 1.6; color: #000000aa;">
-										<span style="color: #000000aa; font-weight: 600;">Haoqin Hong*</span>, Ding Fan*, Fubin Dou, Zhi-Li Zhou, 
-										Haoran Sun, Congcong Zhu†, Jingrun Chen†. &nbsp; AAAI Conference on Artificial Intelligence, AAAI-26  
-										<span style="font-weight: 700; color: #000;"> &nbsp;(CCF-A, Acceptance Rate 16.7%)</span> 						
+										<span style="font-weight: 600;">Haoqin Hong*</span>, Ding Fan*, Fubin Dou, Zhi-Li Zhou,
+										Haoran Sun, Congcong Zhu†, Jingrun Chen†.
+										AAAI Conference on Artificial Intelligence, AAAI-26
+										<span style="font-weight: 700;">(CCF-A, Acceptance Rate 16.7%)</span>
 									</p>
 								</div>
 							</div>
+							
+							<!-- ================= 右侧卡片 ================= -->
+							<div style="flex: 1; text-align: center;">
 
-							<div style="
-							display: flex;
-							align-items: flex-start;
-							gap: 30px;
-							margin: 30px 0;
-							max-width: 1200px;
-						">
-
-							<!-- 左侧图片：35% 宽度 -->
-							<div style="flex: 0 0 40%; position: relative;">
-								<img src="images/ours_method_ccspnet_joint.png" 
-									style="width: 100%; border-radius: 8px;">
-
-								<!-- 图片角标 -->
 								<div style="
-									position: absolute;
-									top: 10px;
-									left: 10px;
-									background-color: #005792;
-									color: #fff;
-									padding: 3px 8px;
-									font-size: 12px;
-									font-weight: 600;
-									border-radius: 5px;
+									width: 100%;
+									max-width: 480px;
+									height: 260px;          /* ⭐ 左右保持一致高度 */
+									margin: 0 auto;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									background: #f8f8f8;
+									border-radius: 10px;
+									overflow: hidden;
+									position: relative;
 								">
-									IJCNN & WCCI Oral
+									<img src="images/ours_method_ccspnet_joint.png"
+										style="
+											max-width: 100%;
+											max-height: 100%;
+											object-fit: contain;
+											display: block;
+										">
+
+									<div style="
+										position: absolute; top: 10px; left: 10px;
+										background-color: #005792; color: #fff;
+										padding: 3px 8px; font-size: 12px;
+										font-weight: 600; border-radius: 5px;">
+										IJCNN & WCCI Oral
+									</div>
+								</div>
+
+								<div style="margin-top: 10px; text-align: left;">
+									<span style="margin: 0 0 8px; color: #000000aa;">
+										CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions.
+										<a href="https://github.com/HaoqinHong/CCSPNet-Joint">
+											<img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg"
+												style="vertical-align: middle;">
+										</a>
+									</span>
+
+									<p style="line-height: 1.6; color: #000000aa;">
+										<span style="font-weight: 600;">Haoqin Hong</span>,
+										Yue Zhou*, Xiangyu Shu, Xiaofang Hu.
+										IEEE IJCNN & WCCI 2024 Oral
+										<span style="font-weight: 700;">(CCF-C Conference)</span>
+									</p>
 								</div>
 							</div>
-
-							<!-- 右侧文字区 -->
-							<div style="flex: 1; padding-top: 8px;">
-
-								<h4 style="margin: 0 0 10px;">
-									CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection
-									Under Extreme Conditions.
-									&nbsp; <a href="https://github.com/HaoqinHong/CCSPNet-Joint">
-										<img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg"
-											style="vertical-align: middle;">
-									</a>
-								</h4>
-	
-
-								<p style="line-height: 1.6; color: #000000aa;">
-
-									<span style="color: #000000aa; font-weight: 600;">Haoqin Hong</span>,
-									Yue Zhou*, Xiangyu Shu, Xiaofang Hu. &nbsp; 
-									IEEE International Joint Conference on Neural Networks, IJCNN & WCCI 2024 Oral
-									&nbsp; <span style="font-weight: 700; color: #000;">(CCF-C Conference)</span>
-								</p>
-
-							</div>
-						</div>
-
-												
-							
+						</div>			
+						
+						
+						
+						 	<span style="font-weight: 600;"></span>Other Co-auther Paper:</span>	
 							<ol>
 								<li style="color: #000000aa;">
 								Attaining Hardware-Efficient Inference in Memristor-Based Transformer Accelerator via Network Redesign. 
