@@ -2604,7 +2604,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 22%;
+		width: 25%;
 	}
 
 		#header > * {
@@ -2682,12 +2682,12 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 22%;
+		margin-left: 25%;
 		/* max-width: 54em; */
 		max-width: 70em;
 		/* padding: 8em 4em 4em 4em; */
 		padding: 4em 3em;
-		width: calc(100% - 22%);
+		width: calc(100% - 25%);
 	}
 
 		#main > section {
