@@ -10,6 +10,41 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.news-wheel {
+				max-height: 180px;
+				overflow-y: auto;
+				padding: 10px 14px;
+				border: 1px solid #00000022;
+				border-radius: 10px;
+				background: #ffffffbb;
+				scroll-behavior: smooth;
+			}
+
+			.news-wheel ul {
+				margin: 0;
+				padding-left: 20px;
+				line-height: 1.45;
+				color: #000000aa;
+			}
+
+			.news-wheel li {
+				margin-bottom: 6px;
+			}
+
+			.news-wheel li:last-child {
+				margin-bottom: 0;
+			}
+
+			.news-wheel::-webkit-scrollbar {
+				width: 8px;
+			}
+
+			.news-wheel::-webkit-scrollbar-thumb {
+				background: #00000040;
+				border-radius: 8px;
+			}
+		</style>
 	</head>
 	
 	<body class="is-preload">
@@ -56,7 +91,7 @@
 							I did research internships at companies or institutes such as <a href="https://www.ubisoft.com/en-us/studio/laforge">UBISOFT La Forge</a> and <a href="https://xinghuo.xfyun.cn/spark">iFlyTek Spark-LLM Team</a>. 
 							I am also active in AI & Robotics competitions, currently a Kaggle Expert, and previously served as the algorithm leader and project manager of the SWU RoboMaster Team. 							
 							I have published 2 first-author papers at conferences or journals such as AAAI 2026 and IJCNN & WCCI 2024, and have also published 2 co-author papers, such as in Neurocomputing 2025.
-							<u>I am currently seeking for research collaborations</u>, feel free to exchange our ideas!
+							I am currently <u>seeking for research collaborations</u>, feel free to exchange our ideas!
 							
 							<ul style="color: #000000aa;">
 							My research interests focus on Physically Interactive World Models:
@@ -94,16 +129,18 @@
 							
 						<br><hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>
 							<h2 style="line-height: 0; color: #000000aa; font-weight: 400;"> News </h2>
-							<ul line-height: 1;" style="color: #000000aa;">
-								<li> 2026.2 &nbsp;&nbsp;&nbsp; 🎉 I will start a long-term student researcher Internship at UBISOFT La Forge.</li>
-								<li> 2026.1 &nbsp;&nbsp;&nbsp; 🎉 I have been admitted to the Tencent Games Engine Technology Research Program.</li>
-								<li> 2025.11 &nbsp; 🎉 My first-author paper was accepted by <u>AAAI-26</u> (CCF-A).</li>
-								<li> 2025.9 &nbsp;&nbsp;&nbsp; 🎉 I will start a research Internship at iFlyTek Spark-LLM Team.</li>
-								<li> 2025.9 &nbsp;&nbsp;&nbsp; 🎉 My co-auther paper was accepted by <u>Neurocomputing</u> (CCF-C).</li>
-								<li> 2025.9 &nbsp;&nbsp;&nbsp; 🎉 I will start my M.Phil in Intelligent Science and Technology at USTC.</li>
-								<li> 2024.3 &nbsp;&nbsp;&nbsp; 🎉 My first-author paper was accepted by <u>IEEE IJCNN 2024 Oral</u> (CCF-C).</li>
-								<li> 2023.6 &nbsp;&nbsp;&nbsp; 🎉 I have been admitted to the China Academy of Sciences Innovation Training Program.</li>
-							</ul>
+							<div class="news-wheel" id="newsWheel">
+								<ul>
+									<li> 2026.2 &nbsp;&nbsp;&nbsp; 🎉 I will start a student researcher Internship at UBISOFT La Forge.</li>
+									<li> 2026.1 &nbsp;&nbsp;&nbsp; 🎉 I have been admitted to the Tencent Games Engine Technology Research Program.</li>
+									<li> 2025.11 &nbsp; 🎉 My first-author paper was accepted by <u>AAAI-26</u> (CCF-A).</li>
+									<li> 2025.9 &nbsp;&nbsp;&nbsp; 🎉 I will start a research Internship at iFlyTek Spark-LLM Team.</li>
+									<li> 2025.9 &nbsp;&nbsp;&nbsp; 🎉 My co-auther paper was accepted by Neurocomputing (CCF-C).</li>
+									<li> 2025.9 &nbsp;&nbsp;&nbsp; 🎉 I will start my M.Phil in Intelligent Science and Technology at USTC.</li>
+									<li> 2024.3 &nbsp;&nbsp;&nbsp; 🎉 My first-author paper was accepted by IEEE IJCNN 2024 Oral (CCF-C).</li>
+									<li> 2023.6 &nbsp;&nbsp;&nbsp; 🎉 I have been admitted to the China Academy of Sciences Innovation Training Program.</li>
+								</ul>
+							</div>
 					</section>
 
 				<!-- Publications & Awards -->
@@ -151,14 +188,14 @@
 											display: block;
 										">
 									
-									<!-- 角标
+
 									<div style="
 										position: absolute; top: 0px; left: 0px;
-										background-color: #3379a8; color: #fff;
-										padding: 3px 8px; font-size: 14px;
-										font-weight: 600; border-radius: 5px;">
+										background-color: #143b70; color: #fff;
+										padding: 2px 6px; font-size: 14px;
+										font-weight: 600; border-radius: 3px; line-height: 1.1;">
 										AAAI-26 Poster
-									</div> -->
+									</div>
 								</div>
 
 								<!-- 文本区域 -->
@@ -197,7 +234,7 @@
 											font-weight: 600;
 											line-height: 1.2;
 										">
-											AAAI-26 · CCF-A Conference
+											CCF-A Conference
 										</span>
 									
 										&nbsp; <a href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting">
@@ -248,6 +285,14 @@
 											display: block;
 										">
 									
+									<div style="
+										position: absolute; top: 0px; left: 0px;
+										background-color: #143b70; color: #fff;
+										padding: 2px 6px; font-size: 14px;
+										font-weight: 600; border-radius: 3px; line-height: 1.1;">
+										IEEE WCCI 2024 - IJCNN Track Oral Presentation
+									</div>
+									
 								</div>
 
 								<!-- 文本区域 -->
@@ -264,9 +309,7 @@
 
 									<p style="line-height: 1.6; color: #000000aa;">
 										<span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Yue Zhou<sup>†</sup>, Xiangyu Shu, Xiaofang Hu. 
-					 					&nbsp; <a href="https://github.com/HaoqinHong/CCSPNet-Joint">
-											<img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg"
-												style="vertical-align: middle;"></a>			   
+					 				
 										&nbsp; <span style="
 											display: inline-block;
 											background-color: rgba(190, 237, 242, 0.8);
@@ -277,8 +320,11 @@
 											font-weight: 600;
 											line-height: 1.2;
 										">
-											IEEE WCCI 2024 - IJCNN Track Oral Presentation · CCF-C Conference
+											CCF-C Conference
 										</span>
+										&nbsp; <a href="https://github.com/HaoqinHong/CCSPNet-Joint">
+											<img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg"
+												style="vertical-align: middle;"></a>			   
 									</p>
 								</div>
 							</div>		
@@ -308,6 +354,14 @@
 											display: block;
 										">
 									
+									<div style="
+										position: absolute; top: 0px; left: 0px;
+										background-color: #143b70; color: #fff;
+										padding: 2px 6px; font-size: 14px;
+										font-weight: 600; border-radius: 3px; line-height: 1.1;">
+										Under Review
+									</div>
+									
 								</div>
 
 								<!-- 文本区域 -->
@@ -330,7 +384,7 @@
 									<p style="line-height: 1.6; color: #000000aa;">
 										Zhemeng Zhang, Jiahua Ma, Xincheng Yang, Xin Wen, Yuzhi Zhang, Boyan Li, Yiran Qin<sup>‡</sup>, Jin Liu, Can Zhao, Li Kang, <span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Zhenfei Yin, Philip Torr, Hao Su, Ruimao Zhang, Daolin Ma<sup>†</sup>. 
 					 								   
-										&nbsp; <span style="
+										<!-- &nbsp; <span style="
 											display: inline-block;
 											background-color: rgba(190, 237, 242, 0.8);
 											color: #555;
@@ -341,7 +395,7 @@
 											line-height: 1.2;
 										">
 											Under Review 
-										</span>
+										</span> -->
 										</a>
 									</p>
 								</div>
@@ -496,7 +550,7 @@
 											<li style="display: flex; align-items: center; gap: 30px;">
 											<img src="images/ubisoft.png" alt="Ubisoft Logo" style="width: 90px; height: auto; border-radius: auto;">
 											<div>
-											<b style="color: #000000aa; font-weight: 600;"> UBISOFT La Forge | UBISOFT China AI & Data Lab (International Cooperation)</b> 
+											<b style="color: #000000aa; font-weight: 600;"> UBISOFT La Forge | UBISOFT China AI & Data Lab</b> 
 											<br><b><small>Student Researcher Intern in Textured 3D Asset Generation </small></b> | 2026.2 - Present						
 											<br><b> (a) PBR Material Generation, (b) Feed-Forward PBR Material Reconstruction</b>
 											<br><b>育碧中国 AI 和数据实验室 La Forge 团队纹理化三维资产生成方向学生研究员</b>
@@ -600,6 +654,49 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				(function () {
+					var wheel = document.getElementById('newsWheel');
+					if (!wheel) return;
+
+					var isPaused = false;
+					var speed = 0.35;
+					var isResetting = false;
+					var autoScrollStopped = false;
+
+					function isAtBottom() {
+						return wheel.scrollTop + wheel.clientHeight >= wheel.scrollHeight - 1;
+					}
+
+					function loopScroll() {
+						if (!isPaused && !isResetting && !autoScrollStopped) {
+							if (isAtBottom()) {
+								isResetting = true;
+								setTimeout(function () {
+									wheel.scrollTop = 0;
+									isResetting = false;
+									autoScrollStopped = true;
+								}, 220);
+							} else {
+								wheel.scrollTop += speed;
+							}
+						}
+						requestAnimationFrame(loopScroll);
+					}
+
+					wheel.addEventListener('mouseenter', function () {
+						isPaused = true;
+					});
+
+					wheel.addEventListener('mouseleave', function () {
+						if (!autoScrollStopped) {
+							isPaused = false;
+						}
+					});
+
+					loopScroll();
+				})();
+			</script>
 
 	</body>
 </html>
