@@ -11,6 +11,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
+			:root {
+				--card-bg: rgba(255, 255, 255, 0.88);
+				--card-border: rgba(0, 0, 0, 0.12);
+				--text-main: rgba(0, 0, 0, 0.74);
+				--text-soft: rgba(0, 0, 0, 0.56);
+				--accent: #2f6fa7;
+			}
+
 			.news-wheel {
 				max-height: 180px;
 				overflow-y: auto;
@@ -44,6 +52,214 @@
 				background: #00000040;
 				border-radius: 8px;
 			}
+
+			.quick-nav {
+				display: grid !important;
+				grid-template-columns: 1fr;
+				gap: 8px;
+				padding: 0;
+				list-style: none;
+				margin: 0 -6px;
+				width: calc(100% + 12px);
+			}
+
+			.quick-nav li {
+				padding: 0 !important;
+				margin: 0;
+			}
+
+			.quick-nav a.button {
+				font-size: 10px;
+				padding: 4px 10px;
+				color: #fff !important;
+				background: transparent;
+				border: 1px solid rgba(255, 255, 255, 0.7);
+				border-radius: 6px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				text-decoration: none;
+				line-height: 1.2;
+				white-space: normal;
+				word-break: break-word;
+				height: auto;
+				min-height: 0;
+				transition: all 0.2s ease;
+			}
+
+			.quick-nav a.button:hover {
+				border-color: rgba(255, 255, 255, 0.95);
+				background: rgba(255, 255, 255, 0.12);
+			}
+
+			.intro-card {
+				background: var(--card-bg);
+				border: 1px solid var(--card-border);
+				border-radius: 12px;
+				padding: 1.1rem 1.15rem;
+				box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+				margin-bottom: 1rem;
+			}
+
+			.intro-text {
+				color: var(--text-main);
+				margin-bottom: 0.8rem;
+			}
+
+			.interest-list {
+				color: var(--text-main);
+				margin: 0.3rem 0 0;
+				padding-left: 1.2rem;
+			}
+
+			.interest-list li {
+				margin-bottom: 0.2rem;
+			}
+
+			.github-stats {
+				display: flex;
+				gap: 12px;
+				flex-wrap: wrap;
+				margin: 1rem 0 0.5rem;
+			}
+
+			.github-stats img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				border: 1px solid var(--card-border);
+			}
+
+			.contact-list {
+				margin-top: 0.7rem;
+			}
+
+			.contact-list h5 {
+				margin: 0.45rem 0;
+				line-height: 1.45;
+				color: var(--text-main);
+			}
+
+			.news-title {
+				line-height: 1.1;
+				color: var(--text-main);
+				font-weight: 500;
+				margin-bottom: 0.7rem;
+			}
+
+			#main h1,
+			#main h2,
+			#main h3 {
+				display: inline-block;
+				color: var(--text-main);
+				line-height: 1.25;
+				margin: 0 0 0.7rem;
+				padding-bottom: 0.18rem;
+				border-bottom: 2px solid rgba(47, 111, 167, 0.42);
+			}
+
+			#main h1 {
+				font-size: 1.65rem;
+				font-weight: 700;
+			}
+
+			#main h2 {
+				font-size: 1.25rem;
+				font-weight: 600;
+			}
+
+			#main h3 {
+				font-size: 1.02rem;
+				font-weight: 500;
+			}
+
+			.awards-card {
+				margin-top: 0.6rem;
+			}
+
+			.awards-heading {
+				line-height: 1.2;
+				color: var(--text-main);
+				font-weight: 600;
+				margin: 0 0 0.6rem;
+			}
+
+			.awards-list {
+				color: var(--text-main);
+				margin: 0;
+				padding-left: 1.2rem;
+			}
+
+			.awards-list li {
+				margin: 0.32rem 0;
+				line-height: 1.5;
+			}
+
+			.awards-note {
+				display: block;
+				font-size: 0.9em;
+				color: var(--text-soft);
+			}
+
+			.section-interest-title {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.55rem;
+				padding: 0.38rem 0.78rem;
+				margin: 0.3rem 0 0.65rem;
+				border-radius: 999px;
+				border: 1px solid rgba(47, 111, 167, 0.26);
+				background: linear-gradient(90deg, rgba(47, 111, 167, 0.14), rgba(255, 255, 255, 0.92));
+				color: #1f4f79;
+				font-size: 0.92rem;
+				font-weight: 700;
+				line-height: 1.35;
+				letter-spacing: 0.01em;
+				box-shadow: 0 4px 14px rgba(27, 70, 108, 0.1);
+			}
+
+			.section-interest-title::before {
+				content: "";
+				display: inline-block;
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				background: #2f6fa7;
+				box-shadow: 0 0 0 3px rgba(47, 111, 167, 0.16);
+			}
+
+			.section-main-title {
+				display: inline-block;
+				margin: 0.35rem 0 0.85rem;
+				padding-bottom: 0.18rem;
+				border-bottom: 2px solid rgba(47, 111, 167, 0.42);
+				line-height: 1.2;
+				color: #1f4f79;
+				font-weight: 700;
+				font-size: 1.65rem;
+				letter-spacing: 0.01em;
+			}
+
+			@media screen and (max-width: 736px) {
+				.section-main-title {
+					font-size: 1.35rem;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				.intro-card {
+					padding: 0.85rem 0.9rem;
+				}
+
+				.section-interest-title {
+					font-size: 0.84rem;
+				}
+
+				.news-wheel {
+					max-height: 230px;
+				}
+			}
 		</style>
 	</head>
 	
@@ -61,15 +277,14 @@
 					<br> Research Intern @ UBISOFT La Forge,
 					<br> Research Intern @ iFlyTek Spark-LLM Team.</h6>
 
-					<h6>
-						<!-- 主导航链接（跳转到不同的部分） -->
-						<ul class="actions" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 0; list-style: none;">
-							<li><a href="#two" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;">   📜 Education Experience</span></a></li>
-							<li><a href="#three" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;"> 💻 Research & Internship</span></a></li>
-							<li><a href="#four" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;">  🏅 Publication & Awards</span></a></li>
-							<li><a href="#five" class="button" style="font-size: 10px; padding: 3px 10px; color: white; background: none; border: 1px solid #fff; border-radius: 5px; text-align: center; text-decoration: none;"> <span style="color: #fff; font-weight: 500;">  👨‍🎨 For More Information </span></a></li>
+					<div>
+						<ul class="actions quick-nav">
+							<li><a href="#two" class="button">📜 Education Experience</a></li>
+							<li><a href="#three" class="button">💻 Research & Internship</a></li>
+							<li><a href="#four" class="button">🏅 Publication & Awards</a></li>
+							<li><a href="#five" class="button">👨‍🎨 For More Information</a></li>
 						</ul>
-					</h6>					
+					</div>
 				</div>
 			</header>
 
@@ -83,52 +298,43 @@
 						<header class="major">
 							<h2>Welcome to my homepage! 🥰</h2>
 						</header>
-						<p style="color: #000000aa;">
-							I am a first-year academic master student in Artificial Intelligence at the School of AI & DS, University of Science and Technology of China, supervised by NSFC Distinguished Young Scholars <a href="https://www.researchgate.net/profile/Jingrun-Chen-2">Prof. Jingrun Chen</a>, and I will also collaborate with Associate Researcher <a href="https://cczly.github.io/">Congcong Zhu</a>. 
-							I  earned a B.Eng in Computer Science (Top Talent Program) in 2025 at Southwest University, under the guidance of <a href="https://scholar.google.com/citations?user=_7HJjpYAAAAJ">Prof. Xiaofang Hu</a>. 
-							
-							<br><br>
-							I did research internships at companies or institutes such as <a href="https://www.ubisoft.com/en-us/studio/laforge">UBISOFT La Forge</a> and <a href="https://xinghuo.xfyun.cn/spark">iFlyTek Spark-LLM Team</a>. 
-							I am also active in AI & Robotics competitions, currently a Kaggle Expert, and previously served as the algorithm leader and project manager of the SWU RoboMaster Team. 							
-							I have published 2 first-author papers at conferences or journals such as AAAI 2026 and IJCNN & WCCI 2024, and have also published 2 co-author papers, such as in Neurocomputing 2025.
-							I am currently <u>seeking for research collaborations</u>, feel free to exchange our ideas!
-							
-							<ul style="color: #000000aa;">
-							My research interests focus on Physically Interactive World Models:
-							<li>Video Generation & 4D Representation Reconstruction</li>
-							<li>Feed-Forward & Generative 3D Vision</li>
-							<li>Multimodal Learning & Robotics Perception</li>
-						</ul>
-						</p>
-							
-					
+						<div class="intro-card">
+							<p class="intro-text">
+								I am a first-year academic master student in Artificial Intelligence at the School of AI & DS, University of Science and Technology of China, supervised by NSFC Distinguished Young Scholars <a href="https://www.researchgate.net/profile/Jingrun-Chen-2">Prof. Jingrun Chen</a>, and I will also collaborate with Associate Researcher <a href="https://cczly.github.io/">Congcong Zhu</a>.
+								I earned a B.Eng in Computer Science (Top Talent Program) in 2025 at Southwest University, under the guidance of <a href="https://scholar.google.com/citations?user=_7HJjpYAAAAJ">Prof. Xiaofang Hu</a>.
+							</p>
+							<p class="intro-text">
+								I did research internships at companies or institutes such as <a href="https://www.ubisoft.com/en-us/studio/laforge">UBISOFT La Forge</a> and <a href="https://xinghuo.xfyun.cn/spark">iFlyTek Spark-LLM Team</a>.
+								I am also active in AI & Robotics competitions, currently a Kaggle Expert, and previously served as the algorithm leader and project manager of the SWU RoboMaster Team.
+								I have published 2 first-author papers at conferences or journals such as AAAI 2026 and IJCNN & WCCI 2024, and have also published 2 co-author papers, such as in Neurocomputing 2025.
+								I am currently <u>seeking for research collaborations</u>, feel free to exchange our ideas.
+							</p>
+							<div class="intro-text">My research interests focus on Physically Interactive World Models:</div>
+							<ul class="interest-list">
+								<li>Video Generation & 4D Representation Reconstruction</li>
+								<li>Feed-Forward & Generative 3D Vision</li>
+								<li>Multimodal Learning & Robotics Perception</li>
+							</ul>
+						</div>
+
 						<ul class="actions">
-							<li><a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV(English)</a> &nbsp; <a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV(Chinese)</a></li>
+							<li><a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV (English)</a> &nbsp; <a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV (Chinese)</a></li>
 						</ul>
 
+						<div class="github-stats">
+							<img src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" />
+						</div>
 
-						<div style="display: flex; gap: 10px;">
-							<img src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Walsvid's GitHub stats" />
-							<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=haoqinhong&layout=compact&hide=html,scss,css,shell,makefile" alt="Top Langs" /> -->
-						  </div>
-						  
+						<div class="contact-list">
+							<h5 class="icon brands fa-github"><span class="label">Github</span> <a href="https://github.com/HaoqinHong">Haoqin Hong's Github</a></h5>
+							<h5 class="icon solid fa-envelope"><span class="label">Email</span> <a href="mailto:haoqinhong@outlook.com">HaoqinHong@outlook.com</a> &nbsp; <a href="mailto:haoqinhong@mail.ustc.edu.cn">haoqinhong@mail.ustc.edu.cn</a></h5>
+							<h5 class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span> <a href="https://scholar.google.com/citations?hl=zh-CN&user=JhgyIPsAAAAJ">Haoqin Hong's Google Scholar</a></h5>
+							<h5 class="icon solid fa-home"><span class="label">Address</span> Tianchen Road, High-tech West District, Chengdu, Sichuan Province, China, 611731</h5>
+						</div>
 
-						<br>
-						<h5 class="icon brands fa-github"><span class="label">Github</span>
-							<a href="https://github.com/HaoqinHong">Haoqin Hong's Github</a>
-
-						<h5 class="icon solid fa-envelope"><span class="label">Email &nbsp;&nbsp;&nbsp;</span>
-				     		<a href="mailto:haoqinhong@outlook.com">HaoqinHong@outlook.com</a>&nbsp; <a href="mailto:haoqinhong@mail.ustc.edu.cn">haoqinhong@mail.ustc.edu.cn</a></h5> 
-					
-
-						<h5 class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span>
-							<a href="https://scholar.google.com/citations?hl=zh-CN&user=JhgyIPsAAAAJ">Haoqin Hong's Google Scholar</a>
-						
-						<h5 class="icon solid fa-home"><span class="label">Address</span>
-							Tianchen Road, High-tech West District, Chengdu, Sichuan Province, China, 611731</h5>	
-							
 						<br><hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>
-							<h2 style="line-height: 0; color: #000000aa; font-weight: 400;"> News </h2>
+
+							<h2 class="news-title">News</h2>
 							<div class="news-wheel" id="newsWheel">
 								<ul>
 									<li> 2026.2 &nbsp;&nbsp;&nbsp; 🎉 I will start a student researcher Internship at UBISOFT La Forge.</li>
@@ -146,13 +352,13 @@
 				<!-- Publications & Awards -->
 				<br>  
 					<section id="four">
-						<h1 style="line-height: 1; color: #000000;">Publications & Awards</h1>
+						<h1 class="section-main-title">Publications & Awards</h1><br>
 									
-							<h2 style="line-height: 1; color: #000000aa; font-weight: 400;"> Publications</h2>
-							<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Articles (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)</h3>
-							<h4 style="line-height: 0.5; color: #000000aa; font-weight: 300;"><u> A total of 4 papers have been published, including 2 as the first author </u></h4>
+							<h2>Publications </h2>
+							<!-- <h3>Articles (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)</h3> -->
+							<h4 style="line-height: 0.5; color: #000000aa; font-weight: 300;">A total of 4 papers have been published, including 2 as the first author. (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)</h4>
 						
-							<span style="font-weight: 600; color: #04424aaa;">Research Interests: Video Generation & 4D Representation Reconstruction</span>	
+							<div class="section-interest-title">Research Interests: Video Generation & 4D Representation Reconstruction</div>
 						<!-- 整体容器：两张图并列 -->
 						<div style="
 							display: flex;
@@ -224,7 +430,7 @@
 										<span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong*</span>, Ding Fan*, Fubin Dou, Zhi-Li Zhou,
 										Haoran Sun, Congcong Zhu<sup>†</sup>, Jingrun Chen<sup>†</sup>. 
 					 								   
-										&nbsp; <span style="
+										<!-- &nbsp; <span style="
 											display: inline-block;
 											background-color: rgba(190, 237, 242, 0.8);
 											color: #555;
@@ -235,7 +441,7 @@
 											line-height: 1.2;
 										">
 											CCF-A Conference
-										</span>
+										</span> -->
 									
 										&nbsp; <a href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting">
 											<img src="https://img.shields.io/github/stars/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting.svg"
@@ -249,7 +455,7 @@
 							 
 						</div>		
 						
-						<span style="font-weight: 600; color: #04424aaa;">Research Interests: Multimodal Learning & Robotics Perception</span>	
+						<div class="section-interest-title">Research Interests: Multimodal Learning & Robotics Perception</div>
 						<!-- 整体容器：两张图并列 -->
 						<div style="
 							display: flex;
@@ -310,7 +516,7 @@
 									<p style="line-height: 1.6; color: #000000aa;">
 										<span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Yue Zhou<sup>†</sup>, Xiangyu Shu, Xiaofang Hu. 
 					 				
-										&nbsp; <span style="
+										<!-- &nbsp; <span style="
 											display: inline-block;
 											background-color: rgba(190, 237, 242, 0.8);
 											color: #555;
@@ -321,7 +527,8 @@
 											line-height: 1.2;
 										">
 											CCF-C Conference
-										</span>
+										</span> -->
+
 										&nbsp; <a href="https://github.com/HaoqinHong/CCSPNet-Joint">
 											<img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg"
 												style="vertical-align: middle;"></a>			   
@@ -403,55 +610,50 @@
 						</div>			
 						
 						
-						 	<span style="font-weight: 600; color: #04424aaa;">Other Paper</span>	
-							<ol>
-								<li style="color: #000000aa;">
-								Attaining Hardware-Efficient Inference in Memristor-Based Transformer Accelerator via Network Redesign. 
-								<br>  Junze Xu*, <span style="color: #000000aa; font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong*</span>, Yue Zhou<sup>†</sup> , Xiaofang Hu, Shukai Duan.
-								   &nbsp; <span style="
-											display: inline-block;
-											background-color: rgba(190, 237, 242, 0.8);
-											color: #555;
-											padding: 3px 8px;
-											border-radius: 6px;
-											font-size: 14px;
-											font-weight: 600;
-											line-height: 1.2;
-										">
-											Neurocomputing · JCR Q1 · CCF-C Journal
-										</span>
-								</li>
-							</ol>	
+						 	<div class="section-interest-title">Other Paper</div>
+								<ol class="awards-list" style="margin-bottom: 1rem;">
+									<li>
+										Attaining Hardware-Efficient Inference in Memristor-Based Transformer Accelerator via Network Redesign.
+										<br>Junze Xu*, <span style="color: #000000aa; font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong*</span>, Yue Zhou<sup>†</sup>, Xiaofang Hu, Shukai Duan.
+										&nbsp; <span style="display: inline-block; background-color: rgba(190, 237, 242, 0.8); color: #555; padding: 3px 8px; border-radius: 6px; font-size: 14px; font-weight: 600; line-height: 1.2;">Neurocomputing 2025</span>
+									</li>
+								</ol>
 
-							<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Chinese Invention Patent</h3>
-							<ol style="color: #000000aa;">
-								<li> Speech Recognition System and Method Based on Lightweight Transformer Network.</li> 
-								<li> Text Sentiment Detection System and Method Based on Memristor.</li>
-							</ol>
+								<!-- <h3 class="awards-heading">Chinese Invention Patent</h3>
+								<ol class="awards-list">
+									<li>Speech Recognition System and Method Based on Lightweight Transformer Network.</li>
+									<li>Text Sentiment Detection System and Method Based on Memristor.</li>
+								</ol> -->
 							<hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>
 
-							<h2 style="line-height: 1; color: #000000aa; font-weight: 400;"> Selected Awards</h2>
-								<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Honors and Awards </h3>
-								<ol style="color: #000000aa;">							
-									<li> Outstanding Individual in Innovation Capability in Chongqing.</li>
-									<!-- <li> Outstanding Individual in Enhancing Innovation Ability in Chongqing.</li> -->
-									<li> Outstanding Graduates in Southwest University.</li>
-									<li> Outstanding Undergraduate Thesis of Southwest University.</li>
-									<li> Southwest University Hanhong Foundation Student Success Scholarship. <br> (Top 40 among graduates of all degree levels)</li>
-									<li> Southwest University First Class Scholarship.</li>
-								</ol>
+								<h2 class="section-main-title">Selected Awards</h2>
+								<div class="intro-card awards-card">
+									<h3 class="awards-heading">Honors and Awards</h3>
+									<ol class="awards-list">
+										<li>Outstanding Individual in Innovation Capability in Chongqing.</li>
+										<li>Outstanding Graduates in Southwest University.</li>
+										<li>Outstanding Undergraduate Thesis of Southwest University.</li>
+										<li>
+											Southwest University Hanhong Foundation Student Success Scholarship.
+											<span class="awards-note">(Top 40 among graduates of all degree levels)</span>
+										</li>
+										<li>Southwest University First Class Scholarship.</li>
+									</ol>
+								</div>
 
-								<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Competition Awards</h3>
-								<ol style="color: #000000aa;">
-									<li> 🥉 Bronze Medal in Kaggle Research Competition: NeurIPS - Open Polymer Prediction 2025.</li>
-									<li> 🥉 Bronze Medal in Kaggle Research Competition: CVPR 2025 Workshop - Image Matching Challenge. </li>
-									<li> 🥉 Bronze Medal in Kaggle Research Competition: Google - Fast or Slow? Predict AI Model Runtime. </li>
-									<li> 🏅 National First Prize in the DJI RoboMaster University League.</li>
-									<li> 🏅 National First Prize in the China Robotics and Artificial Intelligence Competition.</li>
-									<li> 🥈 National Second Prize in the China/Contemporary Undergraduate Mathematical Contest in Modeling.</li>
-									<li> 🥉 National Third Prize in the “Challenge Cup” Specialized Competition - Huawei Track.</li>
-									<li> 🏅 Provincial First Prize in the National Undergraduate Electronics Design Contest.</li>
-								</ol>
+								<div class="intro-card awards-card">
+									<h3 class="awards-heading">Competition Awards</h3>
+									<ol class="awards-list">
+										<li>🥉 Bronze Medal in Kaggle Research Competition: NeurIPS - Open Polymer Prediction 2025.</li>
+										<li>🥉 Bronze Medal in Kaggle Research Competition: CVPR 2025 Workshop - Image Matching Challenge.</li>
+										<li>🥉 Bronze Medal in Kaggle Research Competition: Google - Fast or Slow? Predict AI Model Runtime.</li>
+										<li>🏅 National First Prize in the DJI RoboMaster University League.</li>
+										<li>🏅 National First Prize in the China Robotics and Artificial Intelligence Competition.</li>
+										<li>🥈 National Second Prize in the China/Contemporary Undergraduate Mathematical Contest in Modeling.</li>
+										<li>🥉 National Third Prize in the "Challenge Cup" Specialized Competition - Huawei Track.</li>
+										<li>🏅 Provincial First Prize in the National Undergraduate Electronics Design Contest.</li>
+									</ol>
+								</div>
 
 					</section>
 
@@ -460,45 +662,43 @@
 					<br>
 					<section id="two">
 						<header class="major">
-							<h2 style="color: #000000;">Education Experience</h2>
+							<h2>Education Experience</h2>
 						</header>
+						<div class="intro-card awards-card">
 						<div class="row">
 							<article class="col-12 work-item" style="color: #000000aa;">
 								<div>
 									<ul style="color: #000000aa;">
-											<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/中国科学技术大学校徽.jpg" alt="USTC Logo" style="width: 90px; height: auto; border-radius: auto">
+										<li style="display: flex; align-items: center; gap: 30px; margin-bottom: 16px;">
+											<img src="images/中国科学技术大学校徽.jpg" alt="USTC Logo" style="width: 90px; height: auto; border-radius: auto;">
 											<div>
-											<b style="color: #000000aa; font-weight: 600;"> University of Science and Technology of China (USTC)</b>											
-											<br><b> School of AI & DS</b> | 2025.9 - 2028.7										
-											<br><b> M.Phil in Intelligence Science and Technology - Artificial Intelligence</b> 
-											<br><b> 中国科学技术大学人工智能与数据科学学院智能科学与技术学术型硕士</b>
+												<b style="color: #000000aa; font-weight: 600;">University of Science and Technology of China (USTC)</b>
+												<br><b>School of AI & DS</b> | 2025.9 - 2028.7
+												<br><b>M.Phil in Intelligence Science and Technology - Artificial Intelligence</b>
+												<br><b>中国科学技术大学人工智能与数据科学学院智能科学与技术学术型硕士</b>
 											</div>
-											</li>
-											
-										<br>
-											<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/西大校徽矢量图.png" alt="USTC Logo" style="width: 90px; height: auto; border-radius: auto;">
-											<div>	
-											<b style="color: #000000aa; font-weight: 600;"> Southwest University (SWU)</b>										
-											<br><b>Yuan Longping Class, Hanhong Honors College </b> | 2021.9 - 2025.7 										
-											<br><b> B.Eng in Computer Science and Technology</b> 
-											<br><b> 西南大学含弘荣誉学院袁隆平班计算机科学与技术工学学士</b>
+										</li>
+										<li style="display: flex; align-items: center; gap: 30px; margin-bottom: 16px;">
+											<img src="images/西大校徽矢量图.png" alt="SWU Logo" style="width: 90px; height: auto; border-radius: auto;">
+											<div>
+												<b style="color: #000000aa; font-weight: 600;">Southwest University (SWU)</b>
+												<br><b>Yuan Longping Class, Hanhong Honors College</b> | 2021.9 - 2025.7
+												<br><b>B.Eng in Computer Science and Technology</b>
+												<br><b>西南大学含弘荣誉学院袁隆平班计算机科学与技术工学学士</b>
 											</div>
-											</li>	
-
-										<br>
+										</li>
 										<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/UCLA.png" alt="USTC Logo" style="width: 90px; height: auto; border-radius: auto;">
+											<img src="images/UCLA.png" alt="UCLA Logo" style="width: 90px; height: auto; border-radius: auto;">
 											<div>
-											<b style="color: #000000aa; font-weight: 600;"> University of California, Los Angeles (UCLA)</b>	
-											<br><b> Visiting Student in Data Science</b> | 2022.9 - 2023.1 
-											<br><b> 加州大学洛杉矶分校数据科学项目访问学生</b>
+												<b style="color: #000000aa; font-weight: 600;">University of California, Los Angeles (UCLA)</b>
+												<br><b>Visiting Student in Data Science</b> | 2022.9 - 2023.1
+												<br><b>加州大学洛杉矶分校数据科学项目访问学生</b>
 											</div>
-											</li>	
+										</li>
 									</ul>
 								</div>
 							</article>
+						</div>
 						</div>
 					</section></section>	
 
@@ -507,102 +707,97 @@
 							<br>
 							<section id="three">
 								<header class="major">
-									<h2 style="color: #000000;">Research and Internship Experience</h2>
+									<h2>Research and Internship Experience</h2>
 								</header>
 								
-								<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Research Experience </h3>
-								<div class="row">
-									<article class="col-12 work-item">
-										<div>
-											<ul style="color: #000000aa;">										
-										
-										<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/苏州人工智能实验室.png" alt="USTC Logo" style="width: 90px; height: auto; border-radius: auto;">
-											<div>
-											<b style="color: #000000aa; font-weight: 600;"> Suzhou Key Laboratory of Artificial Intelligence, USTC
-											</b>
-											<br><b>Graduate Research Student</b> | 2024.9 - Present	
-											<br><b>苏州人工智能重点实验室研究生</b>
-											</div>
-										</li>	
-										
-										<br>
-										<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/西南大学人工智能学院院徽.jpg" alt="SWU AI Logo" style="width: 90px; height: auto; border-radius: auto;">
-											<div>
-											<b style="color: #000000aa; font-weight: 600;"> Chongqing Key Laboratory of Brain-inspired Computing, College of AI, SWU
-											</b>
-											<br><b>Undergraduate Research Student</b> | 2022.3 - 2025.6	
-											<br><b>西南大学人工智能学院类脑启发计算重庆市重点实验室本科生</b>
-											</div>
-										</li>											
-										</ul>
-										</div>
-									</article>
-								</div>
-								<hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>  
-
-								<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Internship Experience </h3>
+								<div class="intro-card awards-card">
+								<h3 class="awards-heading">Research Experience</h3>
 								<div class="row">
 									<article class="col-12 work-item">
 										<div>
 											<ul style="color: #000000aa;">
-											<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/ubisoft.png" alt="Ubisoft Logo" style="width: 90px; height: auto; border-radius: auto;">
-											<div>
-											<b style="color: #000000aa; font-weight: 600;"> UBISOFT La Forge | UBISOFT China AI & Data Lab</b> 
-											<br><b><small>Student Researcher Intern in Textured 3D Asset Generation </small></b> | 2026.2 - Present						
-											<br><b> (a) PBR Material Generation, (b) Feed-Forward PBR Material Reconstruction</b>
-											<br><b>育碧中国 AI 和数据实验室 La Forge 团队纹理化三维资产生成方向学生研究员</b>
-											</div>
-											</li>											
-											<br>
-											<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/iflytek.png" alt="iFlyTek Logo" style="width: 90px; height: auto; border-radius: auto;">
-											<div>
-											<b style="color: #000000aa; font-weight: 600;"> Spark-LLM Team | iFlyTek AI Research Institute</b> 
-											<br><b><small>Research Algorithm Engineer Intern in Multimodal-LLMs Post-Training</small></b> | 2025.9 - 2026.1						
-											<br><b> (a) VLM Post-Training with SFT & RFT, (b) Agentic-RL and (c) Reward Model</b>
-											<br><b>讯飞星火大模型团队强化学习后训练方向研究型实习生</b>
-											</div>
-											</li>
+												<li style="display: flex; align-items: center; gap: 30px; margin-bottom: 16px;">
+													<img src="images/苏州人工智能实验室.png" alt="USTC Logo" style="width: 90px; height: auto; border-radius: auto;">
+													<div>
+														<b style="color: #000000aa; font-weight: 600;">Suzhou Key Laboratory of Artificial Intelligence, USTC</b>
+														<br><b>Graduate Research Student</b> | 2024.9 - Present
+														<br><b>苏州人工智能重点实验室研究生</b>
+													</div>
+												</li>
+												<li style="display: flex; align-items: center; gap: 30px;">
+													<img src="images/西南大学人工智能学院院徽.jpg" alt="SWU AI Logo" style="width: 90px; height: auto; border-radius: auto;">
+													<div>
+														<b style="color: #000000aa; font-weight: 600;">Chongqing Key Laboratory of Brain-inspired Computing, College of AI, SWU</b>
+														<br><b>Undergraduate Research Student</b> | 2022.3 - 2025.6
+														<br><b>西南大学人工智能学院类脑启发计算重庆市重点实验室本科生</b>
+													</div>
+												</li>
 											</ul>
 										</div>
 									</article>
 								</div>
+								</div>
+								<!-- <hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>   -->
 
-								<hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>  
-								<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Presentative Project Experience </h3>
+								<div class="intro-card awards-card">
+								<h3 class="awards-heading">Internship Experience</h3>
 								<div class="row">
 									<article class="col-12 work-item">
 										<div>
-											<ul style="color: #000000aa;">										
-										
-										<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/Tencent Games.jpg" alt="Tencent IEG Logo" style="width: 90px; height: auto; border-radius: auto;">
-											<div>
-											<b style="color: #000000aa; font-weight: 600;"> Tencent Interactive Entertainment Group (IEG)
-											</b>
-											<br><b>Tencent Games Engine Technology Research Program</b> | 2026.1 - present
-											<br><b>Applications of World Models based on 3DGS in Game UGC Development</b>	
-											<br><b>腾讯互动娱乐部门游戏引擎技术课题实践项目</b>
-											</div>
-										</li>											
-
-										<br>
-										<li style="display: flex; align-items: center; gap: 30px;">
-											<img src="images/中国科学院.jpg" alt="National Astronomical Observatory Logo" style="width: 90px; height: auto; border-radius: auto;">
-											<div>
-											<b style="color: #000000aa; font-weight: 600;"> National Astronomical Observatory, Chinese Academy of Sciences 
-											</b>
-											<br><b>Leader of Innovation Training Program </b> | 2023.3 - 2024.7	
-											<br><b>Generative Astronomical Multimodal Model for IR-Optical Cross-Retrieval</b>
-											<br><b>中国科学院大学生创新实践训练项目（"科创计划"）负责人</b>
-											</div>
-										</li>											
+											<ul style="color: #000000aa;">
+												<li style="display: flex; align-items: center; gap: 30px; margin-bottom: 16px;">
+													<img src="images/ubisoft.png" alt="Ubisoft Logo" style="width: 90px; height: auto; border-radius: auto;">
+													<div>
+														<b style="color: #000000aa; font-weight: 600;">UBISOFT La Forge | UBISOFT China AI & Data Lab</b>
+														<br><b><small>Student Researcher Intern in Textured 3D Asset Generation</small></b> | 2026.2 - Present
+														<br><b>(a) PBR Material Generation, (b) Feed-Forward PBR Material Reconstruction</b>
+														<br><b>育碧中国 AI 和数据实验室 La Forge 团队纹理化三维资产生成方向学生研究员</b>
+													</div>
+												</li>
+												<li style="display: flex; align-items: center; gap: 30px;">
+													<img src="images/iflytek.png" alt="iFlyTek Logo" style="width: 90px; height: auto; border-radius: auto;">
+													<div>
+														<b style="color: #000000aa; font-weight: 600;">Spark-LLM Team | iFlyTek AI Research Institute</b>
+														<br><b><small>Research Algorithm Engineer Intern in Multimodal-LLMs Post-Training</small></b> | 2025.9 - 2026.1
+														<br><b>(a) VLM Post-Training with SFT & RFT, (b) Agentic-RL and (c) Reward Model</b>
+														<br><b>讯飞星火大模型团队强化学习后训练方向研究型实习生</b>
+													</div>
+												</li>
 											</ul>
 										</div>
 									</article>
+								</div>
+								</div>
+
+								<!-- <hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>   -->
+								<div class="intro-card awards-card">
+								<h3 class="awards-heading">Presentative Project Experience</h3>
+								<div class="row">
+									<article class="col-12 work-item">
+										<div>
+											<ul style="color: #000000aa;">
+												<li style="display: flex; align-items: center; gap: 30px; margin-bottom: 16px;">
+													<img src="images/Tencent Games.jpg" alt="Tencent IEG Logo" style="width: 90px; height: auto; border-radius: auto;">
+													<div>
+														<b style="color: #000000aa; font-weight: 600;">Tencent Interactive Entertainment Group (IEG)</b>
+														<br><b>Tencent Games Engine Technology Research Program</b> | 2026.1 - Present
+														<br><b>Applications of World Models based on 3DGS in Game UGC Development</b>
+														<br><b>腾讯互动娱乐部门游戏引擎技术课题实践项目</b>
+													</div>
+												</li>
+												<li style="display: flex; align-items: center; gap: 30px;">
+													<img src="images/中国科学院.jpg" alt="National Astronomical Observatory Logo" style="width: 90px; height: auto; border-radius: auto;">
+													<div>
+														<b style="color: #000000aa; font-weight: 600;">National Astronomical Observatory, Chinese Academy of Sciences</b>
+														<br><b>Leader of Innovation Training Program</b> | 2023.3 - 2024.7
+														<br><b>Generative Astronomical Multimodal Model for IR-Optical Cross-Retrieval</b>
+														<br><b>中国科学院大学生创新实践训练项目（"科创计划"）负责人</b>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</article>
+								</div>
 								</div>
 
 						</section>
@@ -611,15 +806,15 @@
 
 							<br>  
 							<section id="five">
-							<h2 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Additional Information</h2>							
-							<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Open-Source Projects</h3>
+							<h2>Additional Information</h2><br>							
+							<h3>Open-Source Projects</h3>
 							<ol style="color: #000000aa;">
 							<li>Awesome-Physically-Interactive-World-Models &nbsp; <a href="https://github.com/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding"><img src="https://img.shields.io/github/stars/HaoqinHong/Awesome-Physics-Inspired-Vision-Understanding.svg" alt="Github stars"></a></li>
 							<li>RoboMaster-SLAM: Point-LIO & MID-360 Sentinel Navigation Solution  &nbsp; <a href="https://github.com/HaoqinHong/RoboMaster-SLAM"><img src="https://img.shields.io/github/stars/HaoqinHong/RoboMaster-SLAM.svg" alt="Github stars"></a></li>
 							</ol>
 
 							<br><hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>
-							<h3 style="line-height: 0.5; color: #000000aa; font-weight: 300;"> Research Collaborator</h3>
+							<h3>Research Collaborator</h3>
 							<ul style="color: #000000aa;">
 							<li style="color: #000000aa;">
 								<a href="https://sites.google.com/view/zhi-li-zhou/home?authuser=0"> Zhi-Li Zhou </a> | Ph.D in Physics & Mathmatics at UIUC | Theoretical Physics
