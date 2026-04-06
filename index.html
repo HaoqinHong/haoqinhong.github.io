@@ -127,6 +127,22 @@
 				margin: 1rem 0 0.5rem;
 			}
 
+			.cv-signature-row {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 14px;
+				flex-wrap: wrap;
+			}
+
+			.cv-signature {
+				max-width: 220px;
+				width: 38%;
+				height: auto;
+				object-fit: contain;
+				opacity: 0.95;
+			}
+
 			.github-stats img {
 				max-width: 100%;
 				height: auto;
@@ -255,6 +271,15 @@
 					padding: 0.85rem 0.9rem;
 				}
 
+				.cv-signature-row {
+					justify-content: flex-start;
+				}
+
+				.cv-signature {
+					width: 55%;
+					max-width: 180px;
+				}
+
 				.section-interest-title {
 					font-size: 0.84rem;
 				}
@@ -272,7 +297,7 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h3> Haoqin Hong (洪浩钦),</h3>
+					<h3> Haoqin Hong (洪浩钦),</h3> 
 					<!-- <h5 style="font-size: 16px;"> Physics-Inspired Robotic Perception, <br> World Model.</h5>					 -->
 					<h6> M.Phil in Artificial Intelligence @ USTC, 
 					<br> B.Eng in Computer Science @ SWU,
@@ -299,7 +324,7 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Welcome to my homepage! 🥰</h2>
+							<h2>Welcome to my homepage! 🥰</h2> 
 						</header>
 						<div class="intro-card">
 							<p class="intro-text">
@@ -320,13 +345,16 @@
 							</ul>
 						</div>
 
-						<ul class="actions">
-							<li><a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV (English)</a> &nbsp; <a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV (Chinese)</a></li>
-						</ul>
+						<div class="cv-signature-row">
+							<ul class="actions" style="margin-bottom: 0;">
+								<li><a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV (English)</a> &nbsp; <a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV (Chinese)</a></li> 
+							</ul>
+							<img src="images/中文名字-洪浩亲.png" alt="Signature" class="cv-signature" /><img src="images/英文名字-HaoqinHong.png" alt="Signature" class="cv-signature" />
+						</div>
 
 						<div class="github-stats">
-							<img src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" />
-						</div>
+							<img src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" /> 
+						</div> 
 
 						<div class="contact-list">
 							<h5 class="icon brands fa-github"><span class="label">Github</span> <a href="https://github.com/HaoqinHong">Haoqin Hong's Github</a></h5>
