@@ -260,6 +260,118 @@
 				letter-spacing: 0.01em;
 			}
 
+			.publication-list {
+				display: flex;
+				flex-direction: column;
+				gap: 1.1rem;
+				margin-top: 0.5rem;
+			}
+
+			.publication-item {
+				display: flex;
+				align-items: stretch;
+				gap: 1.2rem;
+				padding: 1rem;
+				border: 1px solid rgba(47, 111, 167, 0.14);
+				border-radius: 14px;
+				background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(244, 248, 252, 0.9));
+				box-shadow: 0 10px 24px rgba(15, 42, 67, 0.06);
+			}
+
+			.publication-media {
+				flex: 0 0 290px;
+				max-width: 290px;
+				min-height: 180px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0.75rem;
+				border-radius: 12px;
+				background: #f8f8f8;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.publication-media img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+				display: block;
+			}
+
+			.publication-tag {
+				position: absolute;
+				top: 0.55rem;
+				left: 0.55rem;
+				background-color: #143b70;
+				color: #fff;
+				padding: 0.22rem 0.5rem;
+				font-size: 0.8rem;
+				font-weight: 600;
+				border-radius: 6px;
+				line-height: 1.2;
+			}
+
+			.publication-content {
+				flex: 1 1 auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				min-width: 0;
+			}
+
+			.publication-title {
+				margin: 0 0 0.5rem;
+				color: var(--text-main);
+				font-size: 1.02rem;
+				font-weight: 700;
+				line-height: 1.45;
+			}
+
+			.publication-links {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.45rem;
+				margin-bottom: 0.6rem;
+			}
+
+			.publication-links a,
+			.publication-meta a {
+				border-bottom: none;
+			}
+
+			.publication-authors {
+				margin: 0;
+				color: #000000aa;
+				line-height: 1.65;
+			}
+
+			.publication-inline-tag {
+				display: inline-block;
+				margin-left: 0.45rem;
+				vertical-align: middle;
+				border-bottom: none;
+			}
+
+			.publication-meta {
+				margin-top: 0.55rem;
+				display: flex;
+				align-items: center;
+				gap: 0.55rem;
+				flex-wrap: wrap;
+			}
+
+			.publication-pill {
+				display: inline-block;
+				background-color: rgba(190, 237, 242, 0.8);
+				color: #555;
+				padding: 3px 8px;
+				border-radius: 6px;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 1.2;
+			}
+
 			@media screen and (max-width: 736px) {
 				.section-main-title {
 					font-size: 1.35rem;
@@ -286,6 +398,18 @@
 
 				.news-wheel {
 					max-height: 230px;
+				}
+
+				.publication-item {
+					flex-direction: column;
+					padding: 0.85rem;
+				}
+
+				.publication-media {
+					flex: none;
+					max-width: 100%;
+					width: 100%;
+					min-height: 190px;
 				}
 			}
 		</style>
@@ -395,256 +519,81 @@
 							
 							<div class="intro-card awards-card">
 							<div class="section-interest-title">Research Interests: Video Generation & 4D Representation Reconstruction</div>
-							
-						<!-- 整体容器：两张图并列 -->
-						<div style="
-							display: flex;
-							justify-content: flex-start;
-							align-items: flex-start;
-							gap: 40px;
-							margin: 40px auto;
-							max-width: 1300px;
-						">
-
-							<!-- ================= 左侧卡片 ================= -->
-							<div style="flex: 0 0 45%; text-align: center;">
-
-								<!-- 固定高度的图片容器 -->
-								<div style="
-									width: 100%;
-									max-width: 500px;
-									height: 210px;          /* ⭐ 控制图片区域高度统一 */
-									margin: 0 auto;
-									display: flex;
-									justify-content: center;
-									align-items: center;     /* ⭐ 图片垂直居中 */
-									background: #f8f8f8;     /* 可选：浅底色让图片更稳 */
-									border-radius: 10px;
-									overflow: hidden;
-									position: relative;
-								">
-									<img src="images/overview_pidg.jpg"
-										style="
-											max-width: 100%;
-											max-height: 100%;
-											object-fit: contain;    /* ⭐ 完整显示图片，不裁剪 */
-											display: block;
-										">
-									
-
-									<div style="
-										position: absolute; top: 0px; left: 0px;
-										background-color: #143b70; color: #fff;
-										padding: 2px 6px; font-size: 14px;
-										font-weight: 600; border-radius: 3px; line-height: 1.1;">
-										AAAI-26 Poster
+							<div class="publication-list">
+								<div class="publication-item">
+									<div class="publication-media" style="min-height: 210px;">
+										<img src="images/overview_pidg.jpg" alt="Physics-Informed Deformable Gaussian Splatting overview">
+										<div class="publication-tag">AAAI-26 Poster</div>
+									</div>
+									<div class="publication-content">
+										<h3 class="publication-title">Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field. <a class="publication-pill publication-inline-tag">Proceedings of the AAAI Conference on Artificial Intelligence 2026</a></h3>
+										<div class="publication-links">
+											<a href="https://arxiv.org/abs/2511.06299" target="_blank" rel="noopener noreferrer">
+												<img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white" alt="arXiv Paper">
+											</a>
+											<a href="https://haoqinhong.github.io/Physics-Informed-Deformable-Gaussian-Splatting.github.io/" target="_blank" rel="noopener noreferrer">
+												<img src="https://img.shields.io/badge/Project-Page-1E90FF?logo=googlechrome&logoColor=white" alt="Project Page">
+											</a>
+											<a href="https://drive.google.com/file/d/1Gs-3Q7FkAkiJchhpULthSEKDRWNrDgNH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+												<img src="https://img.shields.io/badge/Poster-PDF-green?logo=adobeacrobatreader&logoColor=white" alt="Poster PDF">
+											</a>
+											<a href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting" target="_blank" rel="noopener noreferrer">
+												<img src="https://img.shields.io/github/stars/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting.svg" alt="GitHub stars for Physics-Informed Deformable Gaussian Splatting">
+											</a>
+										</div>
+										<p class="publication-authors">
+											<span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong*</span>, Ding Fan*, Fubin Dou, Zhi-Li Zhou, Haoran Sun, Congcong Zhu<sup>†</sup>, Jingrun Chen<sup>†</sup>.
+										</p>
 									</div>
 								</div>
-
-								<!-- 文本区域 -->
-								<div style="margin-top: 10px; text-align: left;">
-									<span style="margin: 0 0 8px; color: #000000aa;">
-										Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field.	
-										 
-										<!-- arXiv -->
-										&nbsp; <a href="https://arxiv.org/abs/2511.06299" target="_blank" rel="noopener noreferrer">
-										<img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white" alt="arXiv Paper">
-										</a>
-
-										<!-- Project Page -->
-										<a href="https://haoqinhong.github.io/Physics-Informed-Deformable-Gaussian-Splatting.github.io/" target="_blank" rel="noopener noreferrer">
-										<img src="https://img.shields.io/badge/Project-Page-1E90FF?logo=googlechrome&logoColor=white" alt="Project Page">
-										</a>
-
-										<!-- Poster -->
-										<a href="https://drive.google.com/file/d/1Gs-3Q7FkAkiJchhpULthSEKDRWNrDgNH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-										<img src="https://img.shields.io/badge/Poster-PDF-green?logo=adobeacrobatreader&logoColor=white" alt="Poster PDF">
-										</a>
-																		
-									</span>
-
-									<p style="line-height: 1.6; color: #000000aa;">
-										<span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong*</span>, Ding Fan*, Fubin Dou, Zhi-Li Zhou,
-										Haoran Sun, Congcong Zhu<sup>†</sup>, Jingrun Chen<sup>†</sup>. 
-					 								   
-										<!-- &nbsp; <span style="
-											display: inline-block;
-											background-color: rgba(190, 237, 242, 0.8);
-											color: #555;
-											padding: 3px 8px;
-											border-radius: 6px;
-											font-size: 14px;
-											font-weight: 600;
-											line-height: 1.2;
-										">
-											CCF-A Conference
-										</span> -->
-									
-										&nbsp; <a href="https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting">
-											<img src="https://img.shields.io/github/stars/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting.svg"
-												style="vertical-align: middle;">
-										</a>
-									</p>
-								</div>
 							</div>
-
-							<!-- ================= 右侧卡片 ================= -->
-							 
-						</div>
-						</div>
+							</div>
 						
 						
 						<div class="intro-card awards-card">
 						<div class="section-interest-title">Research Interests: Multimodal Learning & Robotics Perception</div>
-					
-						<!-- 整体容器：两张图并列 -->
-						<div style="
-							display: flex;
-							justify-content: flex-start;
-							align-items: flex-start;
-							gap: 40px;
-							margin: 40px auto;
-							max-width: 1300px;
-						">
+						<div class="publication-list">
+							<div class="publication-item">
+								<div class="publication-media" style="min-height: 280px;">
+									<img src="images/insights_ccspnet_joint.png" alt="CCSPNet-Joint insights">
+									<div class="publication-tag">IEEE WCCI 2024 - IJCNN Track Oral Presentation</div>
+								</div>
+								<div class="publication-content">
+									<h3 class="publication-title">CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions. <a class="publication-pill publication-inline-tag">2024 International Joint Conference on Neural Networks</a></h3>
+									<div class="publication-links">
+										<a href="https://arxiv.org/abs/2309.06902" target="_blank" rel="noopener noreferrer">
+											<img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white" alt="arXiv Paper">
+										</a>
 
-							<!-- ================= 左侧卡片 ================= -->
-							<div style="flex: 0 0 45%; text-align: center;">
-
-								<!-- 固定高度的图片容器 -->
-								<div style="
-									width: 100%;
-									max-width: 500px;
-									height: 280px;          /* ⭐ 控制图片区域高度统一 */
-									margin: 0 auto;
-									display: flex;
-									justify-content: center;
-									align-items: center;     /* ⭐ 图片垂直居中 */
-									background: #f8f8f8;     /* 可选：浅底色让图片更稳 */
-									border-radius: 10px;
-									overflow: hidden;
-									position: relative;
-								">
-									<img src="images/insights_ccspnet_joint.png"
-										style="
-											max-width: 100%;
-											max-height: 100%;
-											object-fit: contain;    /* ⭐ 完整显示图片，不裁剪 */
-											display: block;
-										">
-									
-									<div style="
-										position: absolute; top: 0px; left: 0px;
-										background-color: #143b70; color: #fff;
-										padding: 2px 6px; font-size: 14px;
-										font-weight: 600; border-radius: 3px; line-height: 1.1;">
-										IEEE WCCI 2024 - IJCNN Track Oral Presentation
+										<a href="https://github.com/HaoqinHong/CCSPNet-Joint" target="_blank" rel="noopener noreferrer">
+											<img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg" alt="GitHub stars for CCSPNet-Joint">
+										</a>
 									</div>
 									
-								</div>
 
-								<!-- 文本区域 -->
-								<div style="margin-top: 10px; text-align: left;">
-									<span style="margin: 0 0 8px; color: #000000aa;">
-										CCSPNet-Joint: Efficient Joint Training Method for Traffic Sign Detection Under Extreme Conditions.
-										
-										<!-- arXiv -->
-										&nbsp; <a href="https://arxiv.org/abs/2309.06902" target="_blank" rel="noopener noreferrer">
-										<img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white" alt="arXiv Paper">
-										</a>
-																		
-									</span>
-
-									<p style="line-height: 1.6; color: #000000aa;">
-										<span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Yue Zhou<sup>†</sup>, Xiangyu Shu, Xiaofang Hu. 
-					 				
-										<!-- &nbsp; <span style="
-											display: inline-block;
-											background-color: rgba(190, 237, 242, 0.8);
-											color: #555;
-											padding: 3px 8px;
-											border-radius: 6px;
-											font-size: 14px;
-											font-weight: 600;
-											line-height: 1.2;
-										">
-											CCF-C Conference
-										</span> -->
-
-										&nbsp; <a href="https://github.com/HaoqinHong/CCSPNet-Joint">
-											<img src="https://img.shields.io/github/stars/HaoqinHong/CCSPNet-Joint.svg"
-												style="vertical-align: middle;"></a>			   
+									<p class="publication-authors">
+										<span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Yue Zhou<sup>†</sup>, Xiangyu Shu, Xiaofang Hu.
 									</p>
 								</div>
-							</div>		
+							</div>
 
-							<!-- ================= 右侧卡片 ================= -->
-							<div style="flex: 0 0 45%; text-align: center;">
-
-								<!-- 固定高度的图片容器 -->
-								<div style="
-									width: 100%;
-									max-width: 500px;
-									height: 180px;          /* ⭐ 控制图片区域高度统一 */
-									margin: 0 auto;
-									display: flex;
-									justify-content: center;
-									align-items: center;     /* ⭐ 图片垂直居中 */
-									background: #f8f8f8;     /* 可选：浅底色让图片更稳 */
-									border-radius: 10px;
-									overflow: hidden;
-									position: relative;
-								">
-									<img src="images/insight_touchguide.png"
-										style="
-											max-width: 100%;
-											max-height: 100%;
-											object-fit: contain;    /* ⭐ 完整显示图片，不裁剪 */
-											display: block;
-										">
-									
-									<div style="
-										position: absolute; top: 0px; left: 0px;
-										background-color: #143b70; color: #fff;
-										padding: 2px 6px; font-size: 14px;
-										font-weight: 600; border-radius: 3px; line-height: 1.1;">
-										Under Review
-									</div>
-									
+							<div class="publication-item">
+								<div class="publication-media" style="min-height: 180px;">
+									<img src="images/insight_touchguide.png" alt="TouchGuide insight">
+									<div class="publication-tag">Under Review</div>
 								</div>
-
-								<!-- 文本区域 -->
-								<div style="margin-top: 10px; text-align: left;">
-									<span style="margin: 0 0 8px; color: #000000aa;">
-										TouchGuide: Inference-Time Steering of Visuomotor Policies via Touch Guidance.
-										
-										<!-- arXiv -->
-										&nbsp; <a href="https://arxiv.org/abs/2601.20239" target="_blank" rel="noopener noreferrer">
-										<img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white" alt="arXiv Paper">
+								<div class="publication-content">
+									<h3 class="publication-title">TouchGuide: Inference-Time Steering of Visuomotor Policies via Touch Guidance.</h3>
+									<div class="publication-links">
+										<a href="https://arxiv.org/abs/2601.20239" target="_blank" rel="noopener noreferrer">
+											<img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white" alt="arXiv Paper">
 										</a>
-
-										<!-- Project Page -->
 										<a href="https://martelzhang.github.io/touchguide/" target="_blank" rel="noopener noreferrer">
-										<img src="https://img.shields.io/badge/Project-Page-1E90FF?logo=googlechrome&logoColor=white" alt="Project Page">
+											<img src="https://img.shields.io/badge/Project-Page-1E90FF?logo=googlechrome&logoColor=white" alt="Project Page">
 										</a>
-																		
-									</span>
-
-									<p style="line-height: 1.6; color: #000000aa;">
-										Zhemeng Zhang, Jiahua Ma, Xincheng Yang, Xin Wen, Yuzhi Zhang, Boyan Li, Yiran Qin<sup>‡</sup>, Jin Liu, Can Zhao, Li Kang, <span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Zhenfei Yin, Philip Torr, Hao Su, Ruimao Zhang, Daolin Ma<sup>†</sup>. 
-					 								   
-										<!-- &nbsp; <span style="
-											display: inline-block;
-											background-color: rgba(190, 237, 242, 0.8);
-											color: #555;
-											padding: 3px 8px;
-											border-radius: 6px;
-											font-size: 14px;
-											font-weight: 600;
-											line-height: 1.2;
-										">
-											Under Review 
-										</span> -->
-										</a>
+									</div>
+									<p class="publication-authors">
+										Zhemeng Zhang, Jiahua Ma, Xincheng Yang, Xin Wen, Yuzhi Zhang, Boyan Li, Yiran Qin<sup>‡</sup>, Jin Liu, Can Zhao, Li Kang, <span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Zhenfei Yin, Philip Torr, Hao Su, Ruimao Zhang, Daolin Ma<sup>†</sup>.
 									</p>
 								</div>
 							</div>
@@ -656,13 +605,14 @@
 							<div class="intro-card awards-card"> 
 							<div class="section-interest-title">Other Paper</div>
 
-								<ol class="awards-list" style="margin-bottom: 1rem;">
-									<li>
-										Attaining Hardware-Efficient Inference in Memristor-Based Transformer Accelerator via Network Redesign.
-										<br>Junze Xu*, <span style="color: #000000aa; font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong*</span>, Yue Zhou<sup>†</sup>, Xiaofang Hu, Shukai Duan.
-										&nbsp; <span style="display: inline-block; background-color: rgba(190, 237, 242, 0.8); color: #555; padding: 3px 8px; border-radius: 6px; font-size: 14px; font-weight: 600; line-height: 1.2;">Neurocomputing 2025</span>
-									</li>
-								</ol>
+								<div class="publication-list" style="margin-top: 0.2rem;">
+									<div class="publication-item">
+										<div class="publication-content">
+											<h3 class="publication-title">Attaining Hardware-Efficient Inference in Memristor-Based Transformer Accelerator via Network Redesign. <a class="publication-pill publication-inline-tag">Neurocomputing 2025</a></h3>
+											<p class="publication-authors">Junze Xu*, <span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong*</span>, Yue Zhou<sup>†</sup>, Xiaofang Hu, Shukai Duan. </p>
+										</div>
+									</div>
+								</div>
 							</div>
 
 								
