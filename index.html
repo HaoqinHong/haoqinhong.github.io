@@ -317,6 +317,78 @@
 				line-height: 1.2;
 			}
 
+			.publication-zoom-btn {
+				position: absolute;
+				right: 0.55rem;
+				bottom: 0.55rem;
+				z-index: 2;
+				height: 1.9rem;
+				padding: 0 0.68rem;
+				border: 1px solid rgba(210, 235, 255, 0.78);
+				border-radius: 999px;
+				background: rgba(210, 235, 255, 0.36);
+				color: rgba(255, 255, 255, 0.98);
+				font-size: 0.76rem;
+				font-weight: 600;
+				line-height: 1.9rem;
+				text-align: center;
+				cursor: pointer;
+				backdrop-filter: blur(10px) saturate(1.3);
+				-webkit-backdrop-filter: blur(10px) saturate(1.3);
+				box-shadow: 0 6px 18px rgba(8, 24, 44, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.36);
+				text-shadow: 0 1px 5px rgba(0, 0, 0, 0.28);
+				transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+			}
+
+			.publication-zoom-btn:hover,
+			.publication-zoom-btn:focus {
+				background: rgba(210, 235, 255, 0.52);
+				border-color: rgba(255, 255, 255, 0.9);
+				transform: scale(1.06);
+			}
+
+			.publication-lightbox {
+				position: fixed;
+				inset: 0;
+				z-index: 10000;
+				display: none;
+				align-items: center;
+				justify-content: center;
+				padding: 2rem;
+				background: rgba(8, 18, 32, 0.82);
+			}
+
+			.publication-lightbox.is-open {
+				display: flex;
+			}
+
+			.publication-lightbox img {
+				max-width: min(94vw, 1180px);
+				max-height: 88vh;
+				object-fit: contain;
+				border-radius: 10px;
+				background: #fff;
+				box-shadow: 0 20px 60px rgba(0, 0, 0, 0.38);
+			}
+
+			.publication-lightbox-close {
+				position: fixed;
+				top: 1rem;
+				right: 1rem;
+				width: 2.35rem;
+				height: 2.35rem;
+				padding: 0;
+				border: 0;
+				border-radius: 50%;
+				background: rgba(255, 255, 255, 0.95);
+				color: #143b70;
+				font-size: 1.45rem;
+				line-height: 2.35rem;
+				text-align: center;
+				cursor: pointer;
+				box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+			}
+
 			.publication-content {
 				flex: 1 1 auto;
 				display: flex;
@@ -957,6 +1029,11 @@
 			</div>
 
 		<!-- Footer -->
+			<div class="publication-lightbox" id="publication-lightbox" aria-hidden="true" role="dialog" aria-label="Publication image preview">
+				<button class="publication-lightbox-close" type="button" aria-label="Close image preview">&times;</button>
+				<img alt="">
+			</div>
+
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
@@ -979,6 +1056,60 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				(function () {
+					var lightbox = document.getElementById('publication-lightbox');
+					if (!lightbox) return;
+
+					var preview = lightbox.querySelector('img');
+					var closeButton = lightbox.querySelector('.publication-lightbox-close');
+					var mediaItems = document.querySelectorAll('.publication-media');
+
+					function openLightbox(image) {
+						preview.src = image.src;
+						preview.alt = image.alt || 'Publication image preview';
+						lightbox.classList.add('is-open');
+						lightbox.setAttribute('aria-hidden', 'false');
+						document.body.style.overflow = 'hidden';
+						closeButton.focus();
+					}
+
+					function closeLightbox() {
+						lightbox.classList.remove('is-open');
+						lightbox.setAttribute('aria-hidden', 'true');
+						document.body.style.overflow = '';
+						preview.removeAttribute('src');
+					}
+
+					mediaItems.forEach(function (media) {
+						var image = media.querySelector('img');
+						if (!image) return;
+
+						var button = document.createElement('button');
+						button.className = 'publication-zoom-btn';
+						button.type = 'button';
+						button.textContent = 'Details';
+						button.setAttribute('aria-label', 'View larger publication image');
+						button.title = 'View larger publication image';
+						button.addEventListener('click', function () {
+							openLightbox(image);
+						});
+						media.appendChild(button);
+					});
+
+					closeButton.addEventListener('click', closeLightbox);
+					lightbox.addEventListener('click', function (event) {
+						if (event.target === lightbox) {
+							closeLightbox();
+						}
+					});
+					document.addEventListener('keydown', function (event) {
+						if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+							closeLightbox();
+						}
+					});
+				})();
+			</script>
 			<script>
 				(function () {
 					var wheels = document.querySelectorAll('.news-wheel');
