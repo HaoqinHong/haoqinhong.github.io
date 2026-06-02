@@ -226,6 +226,56 @@
 				color: var(--text-soft);
 			}
 
+			.collaborator-list {
+				display: grid;
+				gap: 0.62rem;
+				margin: 0.15rem 0 0;
+				padding: 0;
+				list-style: none;
+				color: var(--text-main);
+			}
+
+			.collaborator-item {
+				display: grid;
+				grid-template-columns: minmax(130px, 0.8fr) minmax(210px, 1.45fr) minmax(155px, 0.75fr);
+				align-items: center;
+				gap: 0.45rem 0.85rem;
+				padding: 0.72rem 0.82rem;
+				border: 1px solid rgba(47, 111, 167, 0.16);
+				border-left: 3px solid rgba(47, 111, 167, 0.64);
+				border-radius: 8px;
+				background: linear-gradient(90deg, rgba(47, 111, 167, 0.08), rgba(255, 255, 255, 0.76));
+			}
+
+			.collaborator-name {
+				color: #1f4f79 !important;
+				font-weight: 700;
+				text-decoration: none;
+				line-height: 1.35;
+			}
+
+			.collaborator-name:hover {
+				color: #2f6fa7 !important;
+			}
+
+			.collaborator-meta {
+				color: var(--text-main);
+				line-height: 1.45;
+			}
+
+			.collaborator-topic {
+				justify-self: stretch;
+				padding: 0;
+				border: 0;
+				background: transparent;
+				color: #245a87;
+				font-size: 0.82rem;
+				font-weight: 700;
+				line-height: 1.4;
+				text-align: left;
+				white-space: nowrap;
+			}
+
 			.section-interest-title {
 				display: inline-flex;
 				align-items: center;
@@ -553,6 +603,16 @@
 					max-height: 230px;
 				}
 
+				.collaborator-item {
+					grid-template-columns: 1fr;
+					padding: 0.72rem 0.78rem;
+				}
+
+				.collaborator-topic {
+					justify-self: start;
+					white-space: normal;
+				}
+
 				.publication-item {
 					flex-direction: column;
 					padding: 0.85rem;
@@ -818,14 +878,14 @@
 									<h2 class="awards-heading">Honors and Awards</h2>
 									<div class="news-wheel awards-wheel">
 										<ol class="awards-list">
-											<li>2025.10: USTC First-Class Master's Academic Scholarship. <span class="awards-note">(13,000 RMB)</span></li>
+											<li>2025.10: USTC First-Class Master's Academic Scholarship. <span class="awards-note">(13000 RMB)</span></li>
 											<li>2025.6 & 2024.6: Outstanding Individual in Innovation Capability in Chongqing.</li>
 											<li>2025.6: Outstanding Graduates in SWU.</li>
 											<li>2025.6: Outstanding Undergraduate Thesis of SWU.</li>
 											<li>
-												2025.3: SWU Hanhong Foundation Scholarship. <span class="awards-note">(含弘光大基金学生成长成才奖学金: 12,000 RMB)</span>
+												2025.3: SWU Hanhong Foundation Scholarship. <span class="awards-note">(A top honor among 40 graduates across all degree programs: 10000 RMB)</span>
 											</li>
-											<li>2024.6: SWU First Class Scholarship. <span class="awards-note">(5,000 RMB)</span></li>
+											<li>2024.6: SWU First Class Scholarship. <span class="awards-note">(5000 RMB)</span></li>
 										</ol>
 									</div>
 									
@@ -1017,16 +1077,22 @@
 
 							<br><hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>
 
-							<h2>Research Collaborator</h2>
-							<ul style="color: #000000aa;">
-							<li style="color: #000000aa;">
-								<a href="https://sites.google.com/view/zhi-li-zhou/home?authuser=0"> Zhi-Li Zhou </a> | Ph.D in Physics & Mathmatics at UIUC | Theoretical Physics
+							<h2>Research Collaborators</h2>
+							<ul class="collaborator-list">
+							<li class="collaborator-item">
+								<a class="collaborator-name" href="https://sites.google.com/view/zhi-li-zhou/home?authuser=0">Zhi-Li Zhou</a>
+								<span class="collaborator-meta">Ph.D in Physics &amp; Mathematics at UIUC</span>
+								<span class="collaborator-topic">Theoretical Physics</span>
 							</li>
-							<li style="color: #000000aa;">
-								<a href="https://suchenl.github.io/"> Yuzhuo Chen </a> | M.Eng in CS at USTC | Video Generation
+							<li class="collaborator-item">
+								<a class="collaborator-name" href="https://suchenl.github.io/">Yuzhuo Chen</a>
+								<span class="collaborator-meta">M.Eng in CS at USTC</span>
+								<span class="collaborator-topic">Video Generation, AIGC Safety</span>
 							</li>
-							<li style="color: #000000aa;">
-								<a href="https://martelzhang.github.io/"> Zhemeng Zhang </a> | M.Phil in Robotics at SJTU | Robotics Manipulation
+							<li class="collaborator-item">
+								<a class="collaborator-name" href="https://martelzhang.github.io/">Zhemeng Zhang</a>
+								<span class="collaborator-meta">M.Phil in Robotics at SJTU</span>
+								<span class="collaborator-topic">Tactile-Based Robotics Manipulation</span>
 							</li>
 							</ul>
 							</div>
