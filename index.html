@@ -301,7 +301,8 @@
 
 			.collaborator-list {
 				display: grid;
-				gap: 0.62rem;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 0.78rem;
 				margin: 0.15rem 0 0;
 				padding: 0;
 				list-style: none;
@@ -309,25 +310,38 @@
 			}
 
 			.collaborator-item {
-				display: grid;
-				grid-template-columns: minmax(130px, 0.8fr) minmax(210px, 1.45fr) minmax(155px, 0.75fr);
-				align-items: center;
-				gap: 0.45rem 0.85rem;
-				padding: 0.72rem 0.82rem;
+				display: flex;
+				flex-direction: column;
+				gap: 0.38rem;
+				min-height: 124px;
+				padding: 0.86rem 0.9rem;
 				border: 1px solid rgba(47, 111, 167, 0.16);
-				border-left: 3px solid rgba(47, 111, 167, 0.64);
 				border-radius: 8px;
 				background: linear-gradient(90deg, rgba(47, 111, 167, 0.08), rgba(255, 255, 255, 0.76));
 			}
 
+			.collaborator-header {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 0.65rem;
+			}
+
 			.collaborator-name {
-				color: #1f4f79 !important;
+				color: #1f4f79;
 				font-weight: 700;
-				text-decoration: none;
 				line-height: 1.35;
 			}
 
-			.collaborator-name:hover {
+			.collaborator-homepage {
+				color: #2f6fa7 !important;
+				font-size: 0.78rem;
+				font-weight: 700;
+				line-height: 1.35;
+				white-space: nowrap;
+			}
+
+			.collaborator-homepage:hover {
 				color: #2f6fa7 !important;
 			}
 
@@ -337,7 +351,6 @@
 			}
 
 			.collaborator-topic {
-				justify-self: stretch;
 				padding: 0;
 				border: 0;
 				background: transparent;
@@ -346,7 +359,6 @@
 				font-weight: 700;
 				line-height: 1.4;
 				text-align: left;
-				white-space: nowrap;
 			}
 
 			.section-interest-title {
@@ -710,13 +722,12 @@
 				}
 
 				.collaborator-item {
-					grid-template-columns: 1fr;
 					padding: 0.72rem 0.78rem;
+					min-height: auto;
 				}
 
 				.collaborator-topic {
-					justify-self: start;
-					white-space: normal;
+					font-size: 0.8rem;
 				}
 
 				.publication-item {
@@ -1186,17 +1197,26 @@
 							<h2>Research Collaborators</h2>
 							<ul class="collaborator-list">
 							<li class="collaborator-item">
-								<a class="collaborator-name" href="https://sites.google.com/view/zhi-li-zhou/home?authuser=0">Zhi-Li Zhou</a>
+								<div class="collaborator-header">
+									<span class="collaborator-name">Zhi-Li Zhou</span>
+									<a class="collaborator-homepage" href="https://sites.google.com/view/zhi-li-zhou/home?authuser=0">[homepage]</a>
+								</div>
 								<span class="collaborator-meta">Ph.D in Physics &amp; Mathematics at UIUC</span>
 								<span class="collaborator-topic">Theoretical Physics</span>
 							</li>
 							<li class="collaborator-item">
-								<a class="collaborator-name" href="https://suchenl.github.io/">Yuzhuo Chen</a>
+								<div class="collaborator-header">
+									<span class="collaborator-name">Yuzhuo Chen</span>
+									<a class="collaborator-homepage" href="https://suchenl.github.io/">[homepage]</a>
+								</div>
 								<span class="collaborator-meta">M.Eng in CS at USTC</span>
 								<span class="collaborator-topic">Video Generation, AIGC Safety</span>
 							</li>
 							<li class="collaborator-item">
-								<a class="collaborator-name" href="https://martelzhang.github.io/">Zhemeng Zhang</a>
+								<div class="collaborator-header">
+									<span class="collaborator-name">Zhemeng Zhang</span>
+									<a class="collaborator-homepage" href="https://martelzhang.github.io/">[homepage]</a>
+								</div>
 								<span class="collaborator-meta">M.Phil in Robotics at SJTU</span>
 								<span class="collaborator-topic">Tactile-Based Robotics Manipulation</span>
 							</li>
@@ -1221,7 +1241,7 @@
 						<li><a href="https://scholar.google.com/citations?hl=zh-CN&user=JhgyIPsAAAAJ" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Haoqin Hong's Homepage</li><li>Updated: 2026.05.15</li>
+						<li>&copy; Haoqin Hong's Homepage</li><li>Updated: 2026.06.02</li>
 					</ul>
 				</div>
 			</footer>
