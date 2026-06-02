@@ -126,10 +126,16 @@
 			}
 
 			.github-stats {
-				display: flex;
-				gap: 12px;
-				flex-wrap: wrap;
+				display: grid;
+				grid-template-columns: minmax(280px, 1fr) minmax(130px, 0.34fr) minmax(180px, 0.46fr);
+				align-items: center;
+				gap: 1rem;
 				margin: 1rem 0 0.5rem;
+				padding: 0.8rem 0.9rem;
+				border: 1px solid var(--card-border);
+				border-radius: 12px;
+				background: rgba(255, 255, 255, 0.72);
+				box-shadow: 0 8px 22px rgba(0, 0, 0, 0.045);
 			}
 
 			.cv-signature-row {
@@ -148,11 +154,50 @@
 				opacity: 0.95;
 			}
 
-			.github-stats img {
+			.github-stats-card {
 				max-width: 100%;
 				height: auto;
 				border-radius: 10px;
 				border: 1px solid var(--card-border);
+			}
+
+			.github-cv-links {
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+				justify-content: center;
+				gap: 0.55rem;
+				transform: translateX(-0.55rem);
+			}
+
+			.github-cv-links .button {
+				width: 100%;
+				min-width: 0;
+				margin: 0;
+				padding-left: 0.45rem;
+				padding-right: 0.45rem;
+				text-align: center;
+				white-space: nowrap;
+			}
+
+			.github-signatures {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				justify-content: center;
+				gap: 0.58rem;
+				min-height: 100%;
+				padding-left: 0.85rem;
+				padding-right: 3rem;
+				border-left: 1px solid rgba(0, 0, 0, 0.1);
+			}
+
+			.github-signature {
+				width: 100%;
+				max-width: 210px;
+				height: auto;
+				object-fit: contain;
+				opacity: 0.96;
 			}
 
 			.contact-list {
@@ -191,6 +236,34 @@
 			#main h2 {
 				font-size: 1.25rem;
 				font-weight: 600;
+			}
+
+			#main .homepage-title {
+				display: inline-block;
+				position: relative;
+				margin-bottom: 0.95rem;
+				padding: 0.1rem 0.24rem 0.34rem;
+				border-bottom: 0;
+				background: linear-gradient(90deg, #ff6fae 0%, #f6a642 36%, #2f8fcf 72%, #7a5cff 100%);
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+				font-family: "Comic Sans MS", "Comic Sans", cursive;
+				font-size: 1.88rem;
+				font-weight: 800;
+				line-height: 1.15;
+				text-shadow: 0 2px 0 rgba(255, 255, 255, 0.78), 0 8px 18px rgba(47, 111, 167, 0.18);
+			}
+
+			#main .homepage-title::after {
+				content: "";
+				position: absolute;
+				left: 0.18rem;
+				right: 0.18rem;
+				bottom: 0;
+				height: 0.22rem;
+				border-radius: 999px;
+				background: linear-gradient(90deg, rgba(255, 111, 174, 0.7), rgba(246, 166, 66, 0.68), rgba(47, 143, 207, 0.7));
 			}
 
 			#main h3 {
@@ -595,8 +668,41 @@
 					max-width: 180px;
 				}
 
+				.github-stats {
+					grid-template-columns: 1fr;
+					padding: 0.75rem;
+				}
+
+				.github-stats-card {
+					width: 100%;
+				}
+
+				.github-cv-links {
+					width: min(100%, 220px);
+					margin: 0 auto;
+					transform: none;
+				}
+
+				.github-signatures {
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+					gap: 0.75rem;
+					padding: 0.72rem 0 0;
+					border-left: 0;
+					border-top: 1px solid rgba(0, 0, 0, 0.1);
+				}
+
+				.github-signature {
+					max-width: 155px;
+				}
+
 				.section-interest-title {
 					font-size: 0.84rem;
+				}
+
+				#main .homepage-title {
+					font-size: 1.44rem;
 				}
 
 				.news-wheel {
@@ -661,8 +767,7 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Welcome to my homepage! 🥰</h2> 
-							<img src="images/中文名字-洪浩亲.png" alt="Signature" class="cv-signature" /><img src="images/英文名字-HaoqinHong.png" alt="Signature" class="cv-signature" />
+							<h2 class="homepage-title">Welcome to my homepage! I am Providence / 洪少观.</h2> 
 						</header>
 						<!-- <div><img src="images/中文名字-洪浩亲.png" alt="Signature" class="cv-signature" /><img src="images/英文名字-HaoqinHong.png" alt="Signature" class="cv-signature" /></div> -->
 
@@ -687,16 +792,17 @@
 							</ul> -->
 						</div>
 
-						<div class="cv-signature-row">
-							<ul class="actions" style="margin-bottom: 0;">
-								<li><a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV (English)</a> &nbsp; <a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV (Chinese)</a></li> 
-							</ul>					
-						</div>
-
-		
 						<div class="github-stats">
-							<img src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" /> 
-						</div> 
+							<img class="github-stats-card" src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" />
+							<div class="github-cv-links">
+								<a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV (English)</a>
+								<a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV (Chinese)</a>
+							</div>
+							<div class="github-signatures">
+								<img src="images/中文名字-洪浩亲.png" alt="Chinese signature" class="github-signature" />
+								<img src="images/英文名字-HaoqinHong.png" alt="English signature" class="github-signature" />
+							</div>
+						</div>
 
 						<div class="contact-list">
 							<h5 class="icon brands fa-github"><span class="label">Github</span> <a href="https://github.com/HaoqinHong">Haoqin Hong's Github</a></h5>
