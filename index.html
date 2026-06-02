@@ -301,7 +301,7 @@
 
 			.collaborator-list {
 				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				grid-template-columns: repeat(3, minmax(0, 1fr));
 				gap: 0.78rem;
 				margin: 0.15rem 0 0;
 				padding: 0;
@@ -666,6 +666,12 @@
 				white-space: nowrap;
 			}
 
+			@media screen and (max-width: 980px) {
+				.collaborator-list {
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+				}
+			}
+
 			@media screen and (max-width: 736px) {
 				.intro-card {
 					padding: 0.85rem 0.9rem;
@@ -724,6 +730,10 @@
 				.collaborator-item {
 					padding: 0.72rem 0.78rem;
 					min-height: auto;
+				}
+
+				.collaborator-list {
+					grid-template-columns: 1fr;
 				}
 
 				.collaborator-topic {
@@ -1196,6 +1206,22 @@
 
 							<h2>Research Collaborators</h2>
 							<ul class="collaborator-list">
+							<li class="collaborator-item">
+								<div class="collaborator-header">
+									<span class="collaborator-name">Congcong Zhu</span>
+									<a class="collaborator-homepage" href="https://cczly.github.io/">[homepage]</a>
+								</div>
+								<span class="collaborator-meta">Associate Researcher at USTC (Suzhou)</span>
+								<span class="collaborator-topic">3D Vision, Embodied AI</span>
+							</li>
+							<li class="collaborator-item">
+								<div class="collaborator-header">
+									<span class="collaborator-name">Tianyu Huang</span>
+									<a class="collaborator-homepage" href="https://tyhuang0428.github.io/">[homepage]</a>
+								</div>
+								<span class="collaborator-meta">Researcher at Noah's Ark Lab, Huawei</span>
+								<span class="collaborator-topic">World Models, Video Generation</span>
+							</li>		
 							<li class="collaborator-item">
 								<div class="collaborator-header">
 									<span class="collaborator-name">Zhi-Li Zhou</span>
