@@ -127,11 +127,18 @@
 
 			.github-stats {
 				display: grid;
-				grid-template-columns: minmax(280px, 1fr) minmax(130px, 0.34fr) minmax(180px, 0.46fr);
+				grid-template-columns: max-content minmax(0, 1fr);
+				align-items: center;
+				gap: 0.72rem;
+				margin: 0.75rem 0 0.45rem;
+			}
+
+			.github-profile-card {
+				display: grid;
+				grid-template-columns: minmax(260px, 1fr) minmax(170px, 0.48fr);
 				align-items: center;
 				gap: 1rem;
-				margin: 1rem 0 0.5rem;
-				padding: 0.8rem 0.9rem;
+				padding: 0.72rem 0.82rem;
 				border: 1px solid var(--card-border);
 				border-radius: 12px;
 				background: rgba(255, 255, 255, 0.72);
@@ -155,10 +162,11 @@
 			}
 
 			.github-stats-card {
+				display: block;
+				width: 100%;
 				max-width: 100%;
 				height: auto;
 				border-radius: 10px;
-				border: 1px solid var(--card-border);
 			}
 
 			.github-cv-links {
@@ -166,35 +174,44 @@
 				flex-direction: column;
 				align-items: stretch;
 				justify-content: center;
-				gap: 0.55rem;
-				transform: translateX(-0.55rem);
+				justify-self: start;
+				align-self: center;
+				gap: 0.42rem;
+				width: 132px;
 			}
 
 			.github-cv-links .button {
 				width: 100%;
 				min-width: 0;
+				height: calc(2.25em + 6px);
+				line-height: 2.25em;
 				margin: 0;
-				padding-left: 0.45rem;
-				padding-right: 0.45rem;
+				padding: 0 0.45rem;
+				font-size: 0.82rem;
+				font-weight: 600;
+				letter-spacing: 0;
 				text-align: center;
 				white-space: nowrap;
+			}
+
+			.github-cv-links .button:hover {
+				text-decoration: none;
 			}
 
 			.github-signatures {
 				display: flex;
 				flex-direction: column;
-				align-items: flex-end;
-				justify-content: center;
-				gap: 0.58rem;
+				align-items: center;
+				justify-content: space-evenly;
+				gap: 0.62rem;
 				min-height: 100%;
-				padding-left: 0.85rem;
-				padding-right: 3rem;
+				padding-left: 0.9rem;
 				border-left: 1px solid rgba(0, 0, 0, 0.1);
 			}
 
 			.github-signature {
 				width: 100%;
-				max-width: 210px;
+				max-width: 190px;
 				height: auto;
 				object-fit: contain;
 				opacity: 0.96;
@@ -688,6 +705,11 @@
 
 				.github-stats {
 					grid-template-columns: 1fr;
+					gap: 0.75rem;
+				}
+
+				.github-profile-card {
+					grid-template-columns: 1fr;
 					padding: 0.75rem;
 				}
 
@@ -696,9 +718,15 @@
 				}
 
 				.github-cv-links {
-					width: min(100%, 220px);
-					margin: 0 auto;
-					transform: none;
+					flex-direction: row;
+					flex-wrap: wrap;
+					gap: 0.55rem;
+					justify-self: start;
+					width: auto;
+				}
+
+				.github-cv-links .button {
+					width: 132px;
 				}
 
 				.github-signatures {
@@ -814,14 +842,16 @@
 						</div>
 
 						<div class="github-stats">
-							<img class="github-stats-card" src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" />
 							<div class="github-cv-links">
 								<a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV (English)</a>
 								<a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV (Chinese)</a>
 							</div>
-							<div class="github-signatures">
-								<img src="images/中文名字-洪浩亲.png" alt="Chinese signature" class="github-signature" />
-								<img src="images/英文名字-HaoqinHong.png" alt="English signature" class="github-signature" />
+							<div class="github-profile-card">
+								<img class="github-stats-card" src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" />
+								<div class="github-signatures">
+									<img src="images/中文名字-洪浩亲.png" alt="Chinese signature" class="github-signature" />
+									<img src="images/英文名字-HaoqinHong.png" alt="English signature" class="github-signature" />
+								</div>
 							</div>
 						</div>
 
