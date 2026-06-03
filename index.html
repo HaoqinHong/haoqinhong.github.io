@@ -126,19 +126,16 @@
 			}
 
 			.github-stats {
-				display: grid;
-				grid-template-columns: max-content minmax(0, 1fr);
-				align-items: center;
-				gap: 0.72rem;
+				display: block;
 				margin: 0.75rem 0 0.45rem;
 			}
 
 			.github-profile-card {
 				display: grid;
-				grid-template-columns: minmax(260px, 1fr) minmax(170px, 0.48fr);
+				grid-template-columns: minmax(148px, 0.34fr) minmax(250px, 1fr) minmax(165px, 0.46fr);
 				align-items: center;
 				gap: 1rem;
-				padding: 0.72rem 0.82rem;
+				padding: 0.82rem 0.92rem;
 				border: 1px solid var(--card-border);
 				border-radius: 12px;
 				background: rgba(255, 255, 255, 0.72);
@@ -174,20 +171,20 @@
 				flex-direction: column;
 				align-items: stretch;
 				justify-content: center;
-				justify-self: start;
+				justify-self: center;
 				align-self: center;
-				gap: 0.42rem;
-				width: 132px;
+				gap: 0.55rem;
+				width: 150px;
 			}
 
 			.github-cv-links .button {
 				width: 100%;
 				min-width: 0;
-				height: calc(2.25em + 6px);
-				line-height: 2.25em;
+				height: calc(2.5em + 6px);
+				line-height: 2.5em;
 				margin: 0;
-				padding: 0 0.45rem;
-				font-size: 0.82rem;
+				padding: 0 0.55rem;
+				font-size: 0.88rem;
 				font-weight: 600;
 				letter-spacing: 0;
 				text-align: center;
@@ -704,8 +701,7 @@
 				}
 
 				.github-stats {
-					grid-template-columns: 1fr;
-					gap: 0.75rem;
+					margin-top: 0.75rem;
 				}
 
 				.github-profile-card {
@@ -721,12 +717,13 @@
 					flex-direction: row;
 					flex-wrap: wrap;
 					gap: 0.55rem;
-					justify-self: start;
+					justify-content: center;
+					justify-self: center;
 					width: auto;
 				}
 
 				.github-cv-links .button {
-					width: 132px;
+					width: 150px;
 				}
 
 				.github-signatures {
@@ -842,11 +839,11 @@
 						</div>
 
 						<div class="github-stats">
-							<div class="github-cv-links">
-								<a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV (English)</a>
-								<a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV (Chinese)</a>
-							</div>
 							<div class="github-profile-card">
+								<div class="github-cv-links">
+									<a href="https://drive.google.com/file/d/1a5NwKVi2mEYD9QxQ6H1DNpb09sgOoI5w/view?usp=sharing" class="button">CV (English)</a>
+									<a href="https://drive.google.com/file/d/1bakAgDNofWUCB8y-fi28BWz2Zi2KPgc0/view?usp=sharing" class="button">CV (Chinese)</a>
+								</div>
 								<img class="github-stats-card" src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" />
 								<div class="github-signatures">
 									<img src="images/中文名字-洪浩亲.png" alt="Chinese signature" class="github-signature" />
