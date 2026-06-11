@@ -58,25 +58,26 @@
 				border-radius: 8px;
 			}
 
-			.quick-nav {
-				display: flex !important;
-				flex-direction: column;
-				align-items: flex-end;
-				gap: 8px;
+			#header ul.actions.quick-nav {
+				display: grid !important;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				align-items: stretch;
+				gap: 6px;
 				padding: 0;
 				list-style: none;
+				margin: 0 -0.4rem 0 auto;
+				width: min(100%, 280px) !important;
+			}
+
+			#header ul.actions.quick-nav li {
+				padding: 0 !important;
 				margin: 0;
 				width: 100%;
 			}
 
-			.quick-nav li {
-				padding: 0 !important;
-				margin: 0;
-			}
-
-			.quick-nav a.button {
-				font-size: 10px;
-				padding: 4px 10px;
+			#header ul.actions.quick-nav a.button {
+				font-size: 8px;
+				padding: 4px 6px;
 				color: #fff !important;
 				background: transparent;
 				border: 1px solid rgba(255, 255, 255, 0.7);
@@ -89,14 +90,14 @@
 				line-height: 1.2;
 				white-space: normal;
 				word-break: break-word;
-				width: fit-content;
+				width: 100%;
 				max-width: 100%;
 				height: auto;
-				min-height: 0;
+				min-height: 28px;
 				transition: all 0.2s ease;
 			}
 
-			.quick-nav a.button:hover {
+			#header ul.actions.quick-nav a.button:hover {
 				border-color: rgba(255, 255, 255, 0.95);
 				background: rgba(255, 255, 255, 0.12);
 			}
@@ -680,7 +681,21 @@
 				white-space: nowrap;
 			}
 
+			#footer .copyright {
+				font-size: 0.58em;
+				line-height: 1.2;
+				margin-top: 0.35em;
+			}
+
+			#footer .copyright li {
+				line-height: 1.2;
+			}
+
 			@media screen and (max-width: 980px) {
+				#header ul.actions.quick-nav {
+					margin: 0 -0.4rem 0 auto;
+				}
+
 				.collaborator-list {
 					grid-template-columns: repeat(2, minmax(0, 1fr));
 				}
@@ -799,7 +814,7 @@
 							<li><a href="#two" class="button">📜 Education Experience</a></li>
 							<li><a href="#three" class="button">💻 Research & Internship</a></li>
 							<li><a href="#four" class="button">🏅 Publication & Awards</a></li>
-							<li><a href="#five" class="button">👨‍🎨 For More Information</a></li>
+							<li><a href="#five" class="button">👨‍🎨 Project & Collaborator</a></li>
 						</ul>
 					</div>
 				</div>
@@ -884,7 +899,7 @@
 									
 							<h2>Publications </h2> &nbsp; (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)
 							<!-- <h3>Articles (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)</h3> -->
-							<h4 style="line-height: 0.5; color: #000000aa; font-weight: 300;">A total of 5 papers have been published, including 3 as the first author.</h4>
+							<h4 style="line-height: 0.5; color: #000000aa; font-weight: 300;">A total of 5 publications, including 3 as the first author.</h4>
 
 							
 							<div class="intro-card awards-card">
@@ -1169,7 +1184,7 @@
 													<div>
 														<b style="color: #000000aa; font-weight: 600;">UBISOFT La Forge</b> | UBISOFT Game R&D Department - China Studio
 														<br><b><small>Student Researcher Intern in World Building & Rendering</small></b> | 2026.2 - Present
-														<br><b>(a) Automatic 3D Asset Texturing Pipeline, (b) Feed-Forward PBR Material Estimation</b>
+														<br><b>(a) Automatic 3D Asset Texturing Pipeline, (b) Feed-Forward PBR Material Inverse Rendering</b>
 														<br><b>育碧游戏研发部门 La Forge 团队世界重建和渲染方向学生研究员</b>
 													</div>
 												</li>
@@ -1298,7 +1313,7 @@
 						<li><a href="https://scholar.google.com/citations?hl=zh-CN&user=JhgyIPsAAAAJ" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Haoqin Hong's Homepage</li><li>Updated: 2026.06.02</li>
+						<li>&copy; Haoqin Hong's Homepage, Updated: 2026.06.02</li>
 					</ul>
 				</div>
 			</footer>
