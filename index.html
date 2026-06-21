@@ -102,6 +102,21 @@
 				background: rgba(255, 255, 255, 0.12);
 			}
 
+			#header .header-affiliations {
+				font-size: 0.62em;
+				line-height: 1.42;
+				margin: 0 0 1.05em 0;
+			}
+
+			#header .header-affiliation {
+				display: block;
+			}
+
+			#header .header-affiliation-time {
+				color: rgba(255, 255, 255, 0.72);
+				white-space: nowrap;
+			}
+
 			.intro-card {
 				background: var(--card-bg);
 				border: 1px solid var(--card-border);
@@ -850,12 +865,14 @@
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h3> Haoqin Hong (洪浩钦),</h3> 
 					<!-- <h5 style="font-size: 16px;"> Physics-Inspired Robotic Perception, <br> World Model.</h5>					 -->
-					<h6> M.Phil @ School of AI & DS, USTC, 
-					<br> B.Eng @ Yuan Longping Honors Program, SWU,
-					<br> Visiting Student in Data Science @ UCLA,
-					<br> Research Intern @ UBISOFT La Forge,
-					<br> Research Intern @ iFlyTek Spark-LLM,
-					<br> Algorithm Leader @ SWU RoboMaster Lab.</h6>
+					<h6 class="header-affiliations">
+						<span class="header-affiliation">M.Phil, School of AI & DS, USTC <span class="header-affiliation-time">@ 2025.09 - 2028.07</span></span>
+						<span class="header-affiliation">B.Eng, Yuan Longping Honors Program, SWU <span class="header-affiliation-time">@ 2021.09 - 2025.07</span></span>
+						<span class="header-affiliation">Visiting Student in Data Science, UCLA <span class="header-affiliation-time">@ 2022.09 - 2023.01</span></span>
+						<span class="header-affiliation">Research Intern, UBISOFT La Forge <span class="header-affiliation-time">@ 2026.02 - 2026.08</span></span>
+						<span class="header-affiliation">Research Intern, iFlyTek Spark-LLM <span class="header-affiliation-time">@ 2025.09 - 2026.01</span></span>
+						<span class="header-affiliation">Algorithm Leader, SWU RoboMaster Lab <span class="header-affiliation-time">@ 2023.03 - 2025.03</span></span>
+					</h6>
 
 					<div>
 						<ul class="actions quick-nav">
