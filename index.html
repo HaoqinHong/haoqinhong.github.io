@@ -131,6 +131,19 @@
 				margin-bottom: 0.8rem;
 			}
 
+			.scholar-citation-badge {
+				display: inline-flex;
+				align-items: center;
+				margin-left: 0.35rem;
+				vertical-align: middle;
+				text-decoration: none;
+			}
+
+			.scholar-citation-badge img {
+				display: block;
+				height: 20px;
+			}
+
 			.interest-list {
 				color: var(--text-main);
 				margin: 0.3rem 0 0;
@@ -901,12 +914,15 @@
 							<p class="intro-text">
 							I am a first-year Integrated M.Phil - Ph.D Candidate at the School of AI & DS, USTC, advised by <a href="https://www.researchgate.net/profile/Jingrun-Chen-2">Prof. Jingrun Chen</a>, and I also collaborate with associate researcher <a href="https://cczly.github.io/">Congcong Zhu</a>. 
 							If everything goes well, I will transfer to the USTC - CityUHK Joint Ph.D Degree Program in Fall 2027, co-advised by <a href="https://scholar.google.com/citations?user=C2iR3xUAAAAJ&amp;hl=en">Prof. Gerhard Petrus Hancke</a> and <a href="https://www.cs.cityu.edu.hk/~rynson/">Prof. Rynson W. H. Lau</a> at Department of CS, CityUHK.
-							I received my B.Eng degree in CS from Yuan Longping Honors Program at SWU in 2025.
+							I received my B.Eng degree in CS from Yuan Longping Honors Program at SWU in 2025. 
+							I have published 2 first-author papers at conferences or journals such as AAAI-26 and IJCNN 2024, and have also published 2 co-author papers, such as in RSS 2026.
+							<!-- <a class="scholar-citation-badge" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=JhgyIPsAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar citations">
+								<img data-scholar-citation-badge src="https://img.shields.io/badge/Google%20Scholar-23%20citations-4285F4?logo=googlescholar&amp;logoColor=white" alt="Google Scholar citations: 23">
+							</a> -->
 							</p>
 							<p class="intro-text">
 								I did research internships at cutting-edge research groups such as <a href="https://www.ubisoft.com/en-us/studio/laforge">UBISOFT La Forge</a> and <a href="https://xinghuo.xfyun.cn/spark">iFlyTek Spark-LLM</a>.
 								I am also active in AI and robotics competitions, currently holding the Kaggle Competitions Expert title, and previously served as the algorithm leader and project manager of the SWU RoboMaster Lab.
-								<!-- I have published 2 first-author papers at conferences or journals such as AAAI 2026 and WCCI & IJCNN 2024, and have also published 2 co-author papers, such as in RSS 2026. -->
 							</p>
 							<p class="intro-text">
 								My research interests focus on Physical Constitutive Representation Learning (Physical Intelligence & Interactive World Model). I am <u>seeking research collaborations</u>, feel free to exchange ideas. 
@@ -1413,6 +1429,67 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				(function () {
+					var badge = document.querySelector('[data-scholar-citation-badge]');
+					if (!badge || !window.fetch || !window.DOMParser) return;
+
+					var scholarUrl = 'https://scholar.google.com/citations?hl=en&user=JhgyIPsAAAAJ&view_op=list_works';
+					var encodedScholarUrl = encodeURIComponent(scholarUrl);
+					var sources = [
+						'https://api.allorigins.win/raw?url=' + encodedScholarUrl,
+						'https://corsproxy.io/?' + encodedScholarUrl,
+						'https://r.jina.ai/http://r.jina.ai/http://' + scholarUrl
+					];
+
+					function parseCitationCount(text) {
+						var doc = new DOMParser().parseFromString(text, 'text/html');
+						var cells = doc.querySelectorAll('.gsc_rsb_std');
+
+						for (var i = 0; i < cells.length; i += 1) {
+							var value = cells[i].textContent.replace(/,/g, '').trim();
+							if (/^\d+$/.test(value)) {
+								return parseInt(value, 10);
+							}
+						}
+
+						var markdownMatch = text.match(/Citations\s+(\d[\d,]*)/i);
+						return markdownMatch ? parseInt(markdownMatch[1].replace(/,/g, ''), 10) : null;
+					}
+
+					function setBadgeCount(count) {
+						if (!count && count !== 0) return;
+						var label = count + (count === 1 ? ' citation' : ' citations');
+						badge.src = 'https://img.shields.io/badge/Google%20Scholar-' + encodeURIComponent(label) + '-4285F4?logo=googlescholar&logoColor=white';
+						badge.alt = 'Google Scholar citations: ' + count;
+					}
+
+					(function refreshScholarCitations() {
+						var index = 0;
+
+						function tryNextSource() {
+							if (index >= sources.length) return;
+
+							fetch(sources[index], { cache: 'no-store' })
+								.then(function (response) {
+									if (!response.ok) throw new Error('Citation source unavailable');
+									return response.text();
+								})
+								.then(function (text) {
+									var count = parseCitationCount(text);
+									if (count === null) throw new Error('Citation count unavailable');
+									setBadgeCount(count);
+								})
+								.catch(function () {
+									index += 1;
+									tryNextSource();
+								});
+						}
+
+						tryNextSource();
+					})();
+				})();
+			</script>
 			<script>
 				(function () {
 					var lightbox = document.getElementById('publication-lightbox');
