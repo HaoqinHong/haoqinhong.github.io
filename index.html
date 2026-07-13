@@ -337,9 +337,25 @@
 			}
 
 			.awards-note {
-				display: inline;
-				font-size: 0.9em;
+				display: inline-block;
+				width: fit-content;
+				max-width: 90%;
+				box-sizing: border-box;
+				margin: 0.18rem 0;
+				padding: 0.34rem 0.62rem;
+				border: 1px solid rgba(60, 60, 67, 0.08);
+				border-radius: 0.62rem;
+				background: rgba(118, 118, 128, 0.045);
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.015);
 				color: var(--text-soft);
+				font-family: "Comic Sans MS", "Comic Sans", cursive;
+				font-size: 0.8em;
+				font-weight: 400;
+				line-height: 1.65;
+				letter-spacing: -0.005em;
+				vertical-align: middle;
+				-webkit-backdrop-filter: blur(12px);
+				backdrop-filter: blur(12px);
 			}
 
 			.collaborator-list {
@@ -1190,7 +1206,7 @@
 												<b style="color: #000000aa; font-weight: 600;">University of Science and Technology of China (USTC)</b>
 												<br><b>School of Artificial Intelligence and Data Science</b> | 2025.9 - 2028.7
 												<br><b>M.Phil in Intelligence Science and Technology - Artificial Intelligence</b>
-												<br><span class="awards-note">Postgraduate Recommendation | GPA: 3.5 / 4.3</span>
+												<br><span class="awards-note">Postgraduate Recommendation | GPA: 3.5 / 4.3 <br> Advisor: Prof. Jingrun Chen (NSFC Distinguished Young Scholars)</span>
 												<br><b>中国科学技术大学人工智能与数据科学学院智能科学与技术学术型硕士</b>
 											</div>
 										</li>
@@ -1200,7 +1216,7 @@
 												<b style="color: #000000aa; font-weight: 600;">Southwest University (SWU)</b>
 												<br><b>Science Honors Program, Yuan Longping College (Hanhong College)</b> | 2021.9 - 2025.7
 												<br><b>B.Eng in Computer Science and Technology</b>
-												<br><span class="awards-note">Average Score: 91.3 / 100</span>
+												<br><span class="awards-note">Average Score: 91.3 / 100 | Advisor: Prof. Xiaofang Hu</span>
 												<br><b>西南大学袁隆平书院（含弘学院）理科实验班计算机科学与技术工学学士</b>
 											</div>
 										</li>
@@ -1240,7 +1256,7 @@
 														<b style="color: #000000aa; font-weight: 600;">UBISOFT Game Research & Development Department · La Forge Team</b>
 														<br><b><small>Student Researcher in World Building & Rendering</small></b> | 2026.2 - 2026.7
 														<br><b>(a) Automatic 3D Asset Texturing Pipeline, (b) Feed-Forward PBR Inverse Rendering</b>
-														<br><span class="awards-note">Collaborated with Ubisoft Bordeaux and Montréal Studios. The related work was showcased as a highlight game engine technology at Game Developers Conference (GDC 2026) and adopted in AAA game production pipelines for rapid low-poly mesh validation.</span>
+														<br><span class="awards-note">Collaborated with Ubisoft Bordeaux and Montréal Studios. The related work was showcased as a highlight game engine technology at GDC 2026 and adopted in AAA game production pipelines for rapid low-poly mesh validation.</span>
 														<br><b>育碧游戏研发部门 La Forge 团队世界重建和渲染方向学生研究员</b>
 													</div>
 												</li>
@@ -1250,6 +1266,7 @@
 														<b style="color: #000000aa; font-weight: 600;">iFLYTEK Research & Development Group · Spark-LLM Foundation Model Team</b>
 														<br><b><small>Assistant Research Algorithm Engineer in Multimodal-LLMs Post-Training</small></b> | 2025.9 - 2026.1
 														<br><b>(a) VLM Post-Training with SFT & RFT, (b) Agentic-RL and (c) Reward Model</b>
+														<br><span class="awards-note">Open-sourced a data pipeline for game- and math-oriented understanding, along with reward-model deployment images, adopted in subsequent development of the Spark-LLM model.</span>
 														<br><b> 讯飞星火大模型基座模型团队多模态大模型后训练方向助理算法研究工程师</b>
 													</div>
 												</li>
