@@ -78,6 +78,18 @@
 				margin-bottom: 0;
 			}
 
+			.news-highlight {
+				font-weight: 700;
+				color: #1f4f79;
+				text-decoration: underline;
+				text-decoration-color: #2f6fa7;
+				text-decoration-thickness: 2.5px;
+				text-underline-offset: 0.16em;
+				background: linear-gradient(transparent 62%, rgba(47, 111, 167, 0.14) 62%);
+				padding: 0 0.08em;
+				border-radius: 0.18em;
+			}
+
 			.awards-wheel {
 				max-height: 170px;
 			}
@@ -518,6 +530,67 @@
 				line-height: 1.2;
 			}
 
+			.publication-collaboration-badge {
+				position: absolute;
+				top: 0.55rem;
+				right: 0.55rem;
+				z-index: 2;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				min-height: 3rem;
+				padding: 0.4rem 0.58rem 0.44rem;
+				border: 1px solid rgba(255, 255, 255, 0.7);
+				border-radius: 9px;
+				background: linear-gradient(135deg, rgba(42, 77, 132, 0.97), rgba(37, 139, 153, 0.94));
+				box-shadow: 0 7px 18px rgba(15, 42, 67, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+				color: #fff;
+				line-height: 1.05;
+				text-align: left;
+				pointer-events: none;
+				backdrop-filter: blur(8px) saturate(1.15);
+				-webkit-backdrop-filter: blur(8px) saturate(1.15);
+			}
+
+
+
+			.publication-collaboration-inline {
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0.15rem 0 0.15rem 0.45rem;
+				padding: 0.24rem 0.6rem;
+				border: 1px solid rgba(255, 255, 255, 0.7);
+				border-radius: 6px;
+				background: linear-gradient(135deg, rgba(42, 77, 132, 0.97), rgba(37, 139, 153, 0.94));
+				box-shadow: 0 2px 6px rgba(15, 42, 67, 0.14);
+				color: #fff;
+				font-size: 0.75rem;
+				line-height: 1.4;
+			}
+
+			.publication-collaboration-inline strong {
+				color: inherit;
+				font-weight: 700;
+			}
+
+			.publication-collaboration-badge span {
+				font-size: 0.53rem;
+				font-weight: 600;
+				letter-spacing: 0.055em;
+				opacity: 0.84;
+				text-transform: uppercase;
+			}
+
+			.publication-collaboration-badge strong {
+				margin-top: 0.22rem;
+				font-size: 0.76rem;
+				font-weight: 700;
+				letter-spacing: 0.01em;
+				color: #fff;
+				white-space: nowrap;
+			}
+
 			.publication-zoom-btn {
 				position: absolute;
 				right: 0.55rem;
@@ -889,10 +962,11 @@
 					<h3> Haoqin Hong (洪浩钦)</h3> 				
 					<h6 class="header-affiliations">
 						<!-- <span class="header-affiliation">Joint Ph.D, CityUHK@CS <span class="header-affiliation-time">@ 2027.09 - Present</span></span> -->
-						<span class="header-affiliation">Integrated M.Phil - Ph.D, School of AI & DS, USTC <span class="header-affiliation-time">@ 2025.09 - Present</span></span>
+						<span class="header-affiliation">Integrated M.Phil - Ph.D, USTC (AIDS) <span class="header-affiliation-time">@ 2025.09 - Present</span></span>
 						<!-- <span class="header-affiliation">M.Phil, School of AI & DS, USTC <span class="header-affiliation-time">@ 2025.09 - 2028.07</span></span> -->
-						<span class="header-affiliation">B.Eng (with Honors), Yuan Longping Class, SWU <span class="header-affiliation-time">@ 2021.09 - 2025.07</span></span>
+						<span class="header-affiliation">B.Eng with Honors, SWU (Yuan Longping Class) <span class="header-affiliation-time">@ 2021.09 - 2025.07</span></span>
 						<span class="header-affiliation">Visiting Student, UCLA <span class="header-affiliation-time">@ 2022.09 - 2023.01</span></span>
+						<span class="header-affiliation">Researcher, miHoYo / HoYoverse <span class="header-affiliation-time">@ 2026.07 - 2026.08</span></span>
 						<span class="header-affiliation">Student Researcher, UBISOFT La Forge <span class="header-affiliation-time">@ 2026.02 - 2026.07</span></span>
 						<span class="header-affiliation">Research Intern, iFLYTEK R&D Group <span class="header-affiliation-time">@ 2025.09 - 2026.01</span></span>
 						<span class="header-affiliation"><span class="header-affiliation-time">Kaggle Expert & SWU RoboMaster Lab Ex Leader</span></span>
@@ -928,10 +1002,12 @@
 							I received my B.Eng degree with Honors in Computer Science from Yuan Longping Class at Southwest University (SWU) in 2025. 
 							</p>
 							<p class="intro-text">
+								I previously held internship positions as Researcher @ miHoYo / HoYoverse, Student Researcher @ Ubisoft La Forge, and Assistant Research Algorithm Engineer @ iFLYTEK Research.
 								I have published 2 first-author papers at conferences or journals such as AAAI 2026 and IJCNN 2024, and have also published 2 co-author papers, such as in RSS 2026.
-								My research interests focus on Physical Constitutive Representation Learning (Physical Intelligence & Interactive World Model) and 3D Asset Generation for Game Physics Engines. I am <u>seeking research collaborations</u>, feel free to exchange ideas. 
 							</p>	
-						</div>
+							<p class="intro-text">
+								My research interests focus on Physical Constitutive Representation Learning (Physical Intelligence & Interactive World Model) and 3D Asset Generation for Game Physics Engines (PBR Generation and Super-resolution & Feed-Forward Reconstruction). I am seeking research collaborations, feel free to exchange ideas. 
+							</p>
 
 						<div class="github-stats">
 							<div class="github-profile-card">
@@ -955,13 +1031,14 @@
 							<h2 class="news-title">News</h2>
 							<div class="news-wheel" id="newsWheel">
 								<ul>
-									<li> [2026.04] &nbsp; One co-author paper was accepted by RSS 2026.</li>
+									<li> [2026.05] &nbsp; I will start a research internship at miHoYo / HoYoverse (Jul 2026 - Aug 2026).</li>
+									<li>[2026.04] &nbsp; One co-authored paper, developed in collaboration with Xense Robotics, was accepted to RSS 2026. Congratulations to Zhemeng Zhang @ MMLab - HKU.</li>
 									<li> [2026.02] &nbsp; I will start a research internship at UBISOFT La Forge (Feb 2026 - Jul 2026).</li>
 									<li> [2026.01] &nbsp; I have been admitted to the Tencent Game Engine Graphics Research Talent Program.</li>
-									<li> [2025.11] &nbsp; One <u>first-author paper</u> was accepted by AAAI 2026.</li>
+									<li> [2025.11] &nbsp; <span class="news-highlight">One first-author paper was accepted by AAAI 2026.</span></li>
 									<li> [2025.09] &nbsp; I will start a research internship at iFLYTEK Spark-LLM  (Sep 2025 - Jan 2026).</li>
-									<li> [2025.09] &nbsp; One co-author paper was accepted by Neurocomputing 2025.</li>
-									<li> [2024.03] &nbsp; One <u>first-author paper</u> was accepted by IEEE WCCI - IJCNN 2024 Oral.</li>
+									<li> [2025.09] &nbsp; One co-authored paper, developed in collaboration with JD Explore Academy, was accepted by Neurocomputing 2025.</li>
+									<li> [2024.03] &nbsp; <span class="news-highlight">One first-author paper was accepted by IEEE WCCI - IJCNN 2024 Oral.</span></li>
 							</div>
 					</section>
 
@@ -971,7 +1048,7 @@
 						<h1 class="section-main-title">Publications & Awards</h1><br>
 									
 							<h2>Publications </h2> &nbsp; (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)
-							<h4 style="color: #000000aa; font-weight: 200;">A total of 5 publications, including 3 as the first author.</h4>
+							<h4 style="color: #000000aa; font-weight: 200;">A total of 6 publications, including 4 as the first author.</h4>
 
 							
 							<div class="intro-card awards-card">
@@ -1011,30 +1088,42 @@
 								
 								<div class="publication-item">
 									<div class="publication-media" style="min-height: 210px;">
-										<img src="images/physwonder-highlight.png" alt="PhysWonder highlight">
+										<img src="images/morphtwin-framework.png" alt="Morphtwin method framework" loading="lazy">
 										<div class="publication-tag">Under Review</div>
 									</div>
 									<div class="publication-content">
-										<h3 class="publication-title">PhysWonder: Physically Controllable Video Generation via Internalized Simulation-Coupled Constitutive Representation.</h3>
-										<div class="publication-links">
-											<a href="https://PhysWonder.github.io/" target="_blank" rel="noopener noreferrer">
-												<img src="https://img.shields.io/badge/Project-Page-1E90FF?logo=googlechrome&logoColor=white" alt="Project Page">
-											</a>
-										</div>
-										<p class="publication-authors">
-											<span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong*</span>, Haoxiang Zhan*, Haoran Sun*, Zhemeng Zhang, Yuzhuo Chen, Congcong Zhu<sup>†</sup>, Gerhard P. Hancke, Jingrun Chen<sup>†</sup>, Rynson W. H. Lau.
-										</p>
-									<div class="keyword-row"> 
+										<h3 class="publication-title">MorphTwin: Discovering and Morphing Material Responses from Videos for Interactive Physical Twins.</h3>
+										<p class="publication-authors"><span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Ding Fan, Fubin Dou, Tianyu Huang<sup>‡</sup>, Zhemeng Zhang, Yuzhuo Chen, Congcong Zhu<sup>†</sup>, Gerhard Petrus Hancke, Jingrun Chen<sup>†</sup>, Rynson WH Lau.</p>
+										<div class="keyword-row"> 
 										<span class="keyword-chip">Physically Interactive World Model</span>
 										<span class="keyword-chip">Physical Intelligence</span>
 									</div>
+									</div>
 								</div>
-							</div>
+
+								<div class="publication-item">
+									<div class="publication-media" style="min-height: 210px;">
+										<img src="images/physwonder-framework.png" alt="Physwonder method framework" loading="lazy">
+										<div class="publication-tag">Under Review</div>
+									</div>
+									<div class="publication-content">
+										<h3 class="publication-title">PhysWonder: Building Simulation-Ready Worlds Where Deformation Dynamics Reveal Constitutive Response.</h3>
+										<p class="publication-authors"><span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Haoxiang Zhan, Haoran Sun, Tianyu Huang<sup>‡</sup>, Zhemeng Zhang, Yuzhuo Chen, Liuzhou Zhang, Congcong Zhu<sup>†</sup>, Gerhard Petrus Hancke, Jingrun Chen<sup>†</sup>, Rynson WH Lau.</p>
+										<div class="keyword-row"> 
+										<span class="keyword-chip">Physically Interactive World Model</span>
+										<span class="keyword-chip">Physical Intelligence</span>
+									</div>
+									</div>
+								</div>
 
 							<div class="publication-item">
 								<div class="publication-media" style="min-height: 180px;">
 									<img src="images/insight_touchguide.png" alt="TouchGuide insight">
 									<div class="publication-tag">RSS 2026</div>
+									<div class="publication-collaboration-badge" aria-label="In collaboration with Xense Robotics">
+										<span>In collaboration with</span>
+										<strong>Xense Robotics</strong>
+									</div>
 								</div>
 								<div class="publication-content">
 									<h3 class="publication-title">TouchGuide: Inference-Time Steering of Visuomotor Policies via Touch Guidance.</h3>
@@ -1081,7 +1170,7 @@
 										<div class="publication-content">
 											<h3 class="publication-title">Attaining Hardware-Efficient Inference in Memristor-Based Transformer Accelerator via Network Redesign.</h3>
 											<p class="publication-authors">Junze Xu, <span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong</span>, Yue Zhou<sup>†</sup>, Xiaofang Hu, Shukai Duan. </p>
-											<p class="publication-authors">Neurocomputing 2025, Sep 2025.</p>
+											<p class="publication-authors">Neurocomputing 2025, Sep 2025. <span class="publication-collaboration-inline">In collaboration with <strong>JD Explore Academy</strong></span></p>
 										</div>
 									</div>
 								</div>
@@ -1130,14 +1219,7 @@
 										</div>
 										<div class="publication-content">
 											<h3 class="publication-title">Real-Time Robotic Object Detection and LiDAR 3D SLAM for Navigation.</h3>
-											<p class="publication-authors">From left to right in the photo: Bohan Ma @ ZJU Ph.D, Xiangyu Shu @ SCUT Ph.D, <span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong @ USTC M.Phil</span>, Chengyu Fang @ TsinghuaU M.Eng, Jiesen Zhao @ BUAA M.Eng, Xinke Zhang @ XDU M.Eng.</p>
-											<!-- <div class="publication-links">
-												<a class="certificate-link" href="images/robomaster-certifications.jpg" target="_blank" rel="noopener noreferrer" title="RoboMaster certifications">
-													<span class="icon solid fa-award" aria-hidden="true"></span>
-													<span>Certifications</span>
-												</a>
-												<a href="https://github.com/HaoqinHong/RoboMaster-SLAM" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/HaoqinHong/RoboMaster-SLAM.svg" alt="Github stars"></a>
-											</div>												 -->
+											<p class="publication-authors">From left to right in the photo: Bohan Ma @ ZJU Ph.D, Xiangyu Shu @ SCUT Ph.D, <span style="font-weight: 700; color: #00008B; font-style: italic;">Haoqin Hong @ USTC M.Phil</span>, Chengyu Fang @ TsinghuaU M.Eng, Jiesen Zhao @ BUAA M.Eng, Xinke Zhang @ XDU M.Eng.</p>											 -->
 											<p class="publication-authors">
 												From 2023 to 2025, I served as Project Manager and Algorithm Group Leader, we won First Prize in the DJI RoboMaster University League, with 3rd Place in the Southwest Regional.										
 											<a class="certificate-link" href="images/robomaster-certifications.jpg" target="_blank" rel="noopener noreferrer" title="RoboMaster certifications">
@@ -1176,10 +1258,10 @@
 											<img src="images/西大校徽矢量图.png" alt="SWU Logo" style="width: 90px; height: auto; border-radius: auto;">
 											<div>
 												<b style="color: #000000aa; font-weight: 600;">Southwest University (SWU)</b>
-												<br><b><a href="https://cxcy.swu.edu.cn/" target="_blank">Yuan Longping Class</a> (Science Honors Program)</b> | 2021.9 - 2025.7
+												<br><b>Top Talent Program - <a href="https://cxcy.swu.edu.cn/" target="_blank">Yuan Longping Class</a></b> | 2021.9 - 2025.7
 												<br><b>B.Eng in Computer Science and Technology</b>
 												<br><span class="awards-note">Average Score: 91.3 / 100 | Advisor: Prof. Xiaofang Hu</span>
-												<br><b>西南大学袁隆平班（拔尖人才培养计划）计算机科学与技术工学学士</b>
+												<br><b>西南大学袁隆平书院（拔尖人才培养计划）计算机科学与技术工学学士</b>
 											</div>
 										</li>
 										<li style="display: flex; align-items: center; gap: 30px;">
@@ -1213,22 +1295,26 @@
 										<div>
 											<ul style="color: #000000aa;">
 												<li style="display: flex; align-items: center; gap: 30px; margin-bottom: 16px;">
+													<img src="images/mihoyo-logo.png" alt="Mihoyo Logo" style="width: 90px; height: auto; border-radius: auto;">
+													<div>
+														<b style="color: #000000aa; font-weight: 600;"><a href="https://www.hoyoverse.com/zh-cn/" target="_blank">miHoYo / HoYoverse (Shanghai)</a> · Fundamental Technology Research Team</b>
+														<br><b><small>Researcher (Intern) in Game Engine AI Technology</small></b> | 2026.7 - 2026.8
+														<br><b>米哈游（上海）科技有限公司基础技术研究团队游戏引擎 AI 技术研究员</b>
+													</div>
+												</li>
+												<li style="display: flex; align-items: center; gap: 30px; margin-bottom: 16px;">
 													<img src="images/ubisoft.png" alt="Ubisoft Logo" style="width: 90px; height: auto; border-radius: auto;">
 													<div>
-														<b style="color: #000000aa; font-weight: 600;">UBISOFT Game Research & Development Department · <a href="https://www.ubisoft.com/en-us/studio/laforge" target="_blank">La Forge Team</a></b>
+														<b style="color: #000000aa; font-weight: 600;">UBISOFT Global Research & Development (China Studio) · <a href="https://www.ubisoft.com/en-us/studio/laforge" target="_blank">UBISOFT La Forge Team</a></b>
 														<br><b><small>Student Researcher in World Building & Rendering</small></b> | 2026.2 - 2026.7
-														<br><b>(a) Automatic 3D Asset Texturing Pipeline, (b) Feed-Forward PBR Inverse Rendering</b>
-														<!-- <br><span class="awards-note">Collaborated with Ubisoft Bordeaux and Montréal Studios. The related work was showcased as a highlight game engine technology at GDC 2026 and adopted in AAA game production pipelines for rapid low-poly mesh validation.</span> -->
-														<br><b>育碧游戏研发部门 La Forge 团队世界重建和渲染方向学生研究员</b>
+														<br><b>育碧娱乐软件公司全球研发部门（中国工作室）La Forge 团队世界重建和渲染方向学生研究员</b>
 													</div>
 												</li>
 												<li style="display: flex; align-items: center; gap: 30px;">
 													<img src="images/iflytek.png" alt="iFlyTek Logo" style="width: 90px; height: auto; border-radius: auto;">
 													<div>
-														<b style="color: #000000aa; font-weight: 600;">iFLYTEK Research & Development Group · <a href="https://xinghuo.xfyun.cn/" target="_blank">Spark-LLM Foundation Model Team</a></b>
+														<b style="color: #000000aa; font-weight: 600;">iFLYTEK (Hefei) Research & Development Group · <a href="https://xinghuo.xfyun.cn/" target="_blank">Spark-LLM Foundation Model Team</a></b>
 														<br><b><small>Assistant Research Algorithm Engineer in Multimodal-LLMs Post-Training</small></b> | 2025.9 - 2026.1
-														<br><b>(a) VLM Post-Training with SFT & RFT, (b) Agentic-RL and (c) Reward Model</b>
-														<!-- <br><span class="awards-note">Open-sourced a data pipeline for game- and math-oriented understanding, along with reward-model deployment images, adopted in subsequent development of the Spark-LLM model.</span> -->
 														<br><b> 讯飞星火大模型基座模型团队多模态大模型后训练方向助理算法研究工程师</b>
 													</div>
 												</li>
@@ -1253,7 +1339,18 @@
 														<br><b>Applications of World Models based on 3DGS in Game UGC Development</b>
 														<br><b>腾讯游戏引擎图形学实践精英人才培养计划</b>
 													</div>
-												</li>
+												</li>												
+												<li style="display: flex; align-items: center; gap: 30px;  margin-bottom: 16px;">
+													<img src="images/中科大苏高院.jpeg"
+														alt="USTC-Suzhou High-Level Institute Logo"
+														style="width: 75px; height: auto; margin: 0 7.5px;">
+													<div>
+														<b style="color: #000000aa; font-weight: 600;">Suzhou Institute for Advanced Research, USTC</b>
+														<br><b>Leader of Innovation Training Program</b> | 2026.6 - Present
+														<br><b>Towards World Models: Physics-Aligned Generative Platform for Spatial Intelligence</b>
+														<br><b>中国科学技术大学苏州高等研究院创新创业项目负责人</b>
+													</div>
+												</li>											
 												<li style="display: flex; align-items: center; gap: 30px;">
 													<img src="images/中国科学院.jpg" alt="National Astronomical Observatory Logo" style="width: 90px; height: auto; border-radius: auto;">
 													<div>
@@ -1350,7 +1447,7 @@
 						<li><a href="https://scholar.google.com/citations?hl=zh-CN&user=JhgyIPsAAAAJ" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Haoqin Hong's Homepage | Updated: 2026.07.26</li>
+						<li>&copy; Haoqin Hong's Homepage | Updated: 2026.09.25</li>
 					</ul>
 				</div>
 			</footer>
