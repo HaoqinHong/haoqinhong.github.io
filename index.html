@@ -956,7 +956,13 @@
 				}
 			}
 		</style>
-	</head>
+	<style>
+.personal-links .personal-link-item{padding:0;min-height:124px;transition:border-color .2s,box-shadow .2s}
+.personal-link{display:flex;flex-direction:column;justify-content:center;gap:.38rem;flex:1;padding:.86rem .9rem;border:0}
+.personal-link-item:hover{border-color:#73999a;box-shadow:0 4px 12px rgba(28,60,65,.08)}
+.personal-link:focus-visible{outline:2px solid #2f6fa7;outline-offset:3px;border-radius:8px}
+</style>
+</head>
 	
 	<body class="is-preload">
 
@@ -1042,7 +1048,8 @@
 
 						<br><hr style="border: 1px dashed #808080; width: 80%; margin: auto;"><br>
 
-							<h2 class="news-title">News</h2>
+							
+<h2 class="news-title">News</h2>
 							<div class="news-wheel" id="newsWheel">
 								<ul>
 									<li> [2026.09] &nbsp; I will join Kuaishou KlingAI Research as a Multimodal Video Generation Algorithm Intern in October 2026, working with the Embodied AI Foundation Model Team and focusing on Agentic Robotics.</li>
@@ -1407,7 +1414,18 @@
 
 							<br>  
 							<section id="five">
-							<h1>Additional Information</h1><br>							
+							<h1>Additional Information</h1><br>
+<div class="intro-card awards-card">
+<h2>Interests &amp; Hobbies</h2>
+<ul class="collaborator-list personal-links">
+<li class="collaborator-item personal-link-item">
+<a href="essays.html" class="personal-link">
+<span class="collaborator-name">少观随笔</span>
+<span class="collaborator-meta">Shaoguan Essays</span>
+</a>
+</li>
+</ul>
+</div>							
 							<div class="intro-card awards-card">
 	
 							<h2>Research Collaborators</h2>
