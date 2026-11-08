@@ -1,43 +1,63 @@
 const notes = [
   {
-    "group": "Foundation Papers",
+    "group": "Graphics",
     "title": "3D Gaussian Splatting",
+    "date": "2024-05-24",
     "id": "1oM7mbGSl8osIrZPsmdXvczVDCtFTxJ1D"
   },
   {
-    "group": "Foundation Papers",
+    "group": "Graphics",
     "title": "2D Gaussian Splatting",
+    "date": "2024-05-29",
     "id": "1QFrkBhMLyqLRCn7bujKy98B0hI34PFEH"
   },
   {
-    "group": "Foundation Papers",
+    "group": "Graphics",
     "title": "Dynamic 3D Gaussians & 4D Gaussian Splatting",
-    "id": "12WS_nT51RxmYC8OIg7bw9K-Uwl6fgALD"
+    "id": "12WS_nT51RxmYC8OIg7bw9K-Uwl6fgALD",
+    "date": "2024-05-18",
+    "approximate": true,
+    "dateSource": "根据本地文件创建时间推断：Dynamic 3D Gaussians.pdf"
   },
   {
-    "group": "Foundation Papers",
+    "group": "Graphics",
     "title": "Deformable-Gaussians",
-    "id": "1rheSh8b9ddjkNqO2vwPT7PSiTZS5BnCD"
+    "id": "1rheSh8b9ddjkNqO2vwPT7PSiTZS5BnCD",
+    "date": "2024-08-26",
+    "approximate": true,
+    "dateSource": "根据本地文件创建时间推断：Deformable 3D Gaussian：用于高保真单目动态场景重建的可变形 3D 高斯.pptx"
   },
   {
-    "group": "Simulation Method Papers",
+    "group": "Graphics",
     "title": "PhysGaussian",
-    "id": "1gGP4GepEl_6BimyBY2mKY-1maDdQF5Eo"
+    "id": "1gGP4GepEl_6BimyBY2mKY-1maDdQF5Eo",
+    "date": "2024-06-17",
+    "approximate": true,
+    "dateSource": "根据本地文件创建时间推断：PhysGausssian 用于生成动力学的物理集成3D高斯.pptx"
   },
   {
-    "group": "Simulation Method Papers",
+    "group": "Graphics",
     "title": "PhysDreamer & KAN & Other Physics-based Learning Methods",
-    "id": "1UeIEYOUAYjqssfW6EOnoi57hhoc50uKX"
+    "id": "1UeIEYOUAYjqssfW6EOnoi57hhoc50uKX",
+    "date": "2024-05-07",
+    "approximate": true,
+    "dateSource": "根据本地文件创建时间推断：物理启发的视觉理解（PhysDreamer, KAN, PhysDiff）.pptx"
   },
   {
-    "group": "Physics-Informed Method Papers",
+    "group": "Graphics",
     "title": "Physics Informed Neural Fields",
-    "id": "1vperfD5crgXPBXlTtspMpOguhXVQLZmU"
+    "id": "1vperfD5crgXPBXlTtspMpOguhXVQLZmU",
+    "date": "2025-04-25",
+    "approximate": true,
+    "dateSource": "根据本地文件创建时间推断：稀疏数据下的物理信息神经场烟雾重建.pptx"
   },
   {
-    "group": "Physics-Informed Method Papers",
+    "group": "Graphics",
     "title": "Physics-Informed Learning of Characteristic Trajectories",
-    "id": "1blHG7hLBt8Ndm8s1tV4ZgCA06D1dqpPu"
+    "id": "1blHG7hLBt8Ndm8s1tV4ZgCA06D1dqpPu",
+    "date": "2025-04-25",
+    "approximate": true,
+    "dateSource": "根据本地文件创建时间推断：Physics-Informed Fluid Reconstruction.pptx（相关主题）"
   }
 ];
 const entries = document.getElementById('entries');
@@ -63,6 +83,12 @@ for (const group of [...new Set(notes.map(note => note.group))]) {
   notes.forEach((note,index) => {
     if (note.group !== group) return;
     const button = document.createElement('button'); button.type = 'button'; button.className = 'note-card'; button.textContent = note.title;
+    const date = document.createElement(note.date ? 'time' : 'span');
+    date.className = 'note-date';
+    if (note.date) date.dateTime = note.date;
+    date.textContent = note.date ? `整理于 ${note.date}` : '整理日期待确认';
+    if (note.dateSource) date.title = note.dateSource;
+    button.append(date);
     button.addEventListener('click', () => showNote(index)); grid.append(button);
   });
   section.append(heading,grid); entries.append(section);
