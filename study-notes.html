@@ -34,14 +34,23 @@ header p { font-size: 13px; color: #7b8581; margin: 6px 0 0; }
   .essay h2 { font-size: 20px; }
   .essay .essay-meta { margin-bottom: 22px; }
 }
+.sources{font-size:13px;color:#527385;margin:22px 0}.sources a{text-decoration:underline;text-underline-offset:3px}.note-group{margin:32px 0}.note-group h2{font-size:17px;font-weight:500}.note-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.note-card{font:inherit;text-align:left;color:#245a78;border:1px solid #d3e1eb;background:linear-gradient(110deg,#eef4f8,#fff);border-radius:8px;padding:20px;min-height:100px;cursor:pointer;line-height:1.6}.note-card:hover{border-color:#719bb5}button:focus-visible{outline:2px solid #2f6fa7;outline-offset:3px}dialog{width:min(1100px,96vw);max-width:96vw;height:92dvh;max-height:94vh;padding:20px;border:1px solid #d3e1eb;border-radius:12px;background:#faf9f6;color:#344343}dialog[open]{display:flex;flex-direction:column}dialog::backdrop{background:#14253599}.reader-head,.reader-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.reader-head{justify-content:space-between}.reader-head h2{font-size:18px;flex:1;margin:0 0 12px}.reader-tools button,#close-reader{padding:7px 12px;border:1px solid #ccd8df;background:white;border-radius:5px;cursor:pointer}.reader-tools button:disabled{opacity:.4;cursor:default}.reader-tools{font-size:13px}.reader-tools a{margin-left:auto;text-decoration:underline}.reader-help{font-size:12px;color:#728080;margin:10px 0}iframe{width:100%;flex:1;min-height:0;border:1px solid #dfe3de;background:white}@media(max-width:600px){.note-grid{grid-template-columns:1fr}dialog{padding:12px}.reader-head h2{font-size:15px}.reader-tools{gap:8px}}
 </style>
 </head>
 <body>
 <nav aria-label="页面导航"><a href="index.html">返回主页</a></nav>
 <main>
 <header><h1>学习笔记</h1><p>Study Notes</p></header>
+
 <section id="entries" aria-label="学习笔记列表"></section>
+<noscript>请启用 JavaScript，或通过上方仓库链接阅读笔记。</noscript>
+<dialog id="reader" aria-labelledby="reader-title">
+<div class="reader-head"><h2 id="reader-title"></h2><button id="close-reader" type="button">关闭</button></div>
+<div class="reader-tools"><button id="previous" type="button">上一篇</button><span id="position" aria-live="polite"></span><button id="next" type="button">下一篇</button><a id="original" target="_blank" rel="noopener">打开原文件</a></div>
+<p class="reader-help">文档内可翻页、缩放。若预览无法加载，请打开原文件。</p>
+<iframe id="document-frame" title="学习笔记预览" allow="fullscreen"></iframe>
+</dialog>
 </main>
 
-</body>
+<script src="assets/js/study-notes.js"></script></body>
 </html>
