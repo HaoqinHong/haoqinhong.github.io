@@ -958,6 +958,40 @@
 		</style>
 	
 
+<style>
+.school-inline{display:inline;white-space:nowrap;color:inherit;border-bottom:1px dotted #94afc5;line-height:inherit}
+.school-inline img{display:inline-block;width:1.15em;height:1.15em;max-width:none;object-fit:contain;vertical-align:-.2em;margin:0 .25em 0 0}
+.school-inline:hover{color:#2f6fa7;border-bottom-color:#2f6fa7}
+.school-inline:focus-visible{outline:2px solid #2f6fa7;outline-offset:3px;border-radius:2px}
+</style>
+<style>
+.publication-filters{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+.publication-filters[hidden],.publication-item[hidden],.publication-filter-group[hidden]{display:none!important}
+.publication-filters button{height:auto;line-height:1.5;padding:.4rem .85rem;border:1px solid #cbddeb;border-radius:7px;box-shadow:none;font-size:.8rem;color:#315f83;background:#fff}
+.publication-filters button[aria-pressed="true"]{background:#e8f1f8;border-color:#7fa8c8;color:#214e73}
+.publication-filters button:focus-visible{outline:2px solid #2f6fa7;outline-offset:3px}
+.publication-count{font-size:.75rem;color:#78838d;margin-left:.3rem}
+</style>
+<style>
+.publication-filters .cofirst-option{display:flex;align-items:center;gap:.4rem;margin:0;font-size:.8rem;font-weight:400;color:#536b7e}
+.publication-filters #include-cofirst{appearance:auto;-webkit-appearance:checkbox;opacity:1;display:inline-block;float:none;width:16px;height:16px;margin:0;position:static;pointer-events:auto}
+</style>
+<style>
+.research-profile-card{display:block}
+.research-demos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;width:100%}
+.research-demos figure{margin:0;min-width:0;border:1px solid #d4e2ed;border-radius:10px;overflow:hidden;background:#f7fafc}
+.research-demos img{display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:#fff}
+.research-demos figcaption{padding:12px 14px}.research-demos strong{color:#285b83;font-size:1rem}.research-demos p{font-size:.76rem;line-height:1.6;margin:6px 0 0;color:#63717d}
+.research-profile-card .github-signatures{margin-top:14px}
+@media(max-width:736px){.research-demos{grid-template-columns:1fr}.research-demos img{max-height:280px}}
+</style>
+<style>
+.quotes-signature-row{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:24px;align-items:center;margin:12px 0 20px}
+.quotes-signature-row .quote-lines{margin:0;line-height:1.9}
+.quotes-signature-row .github-signatures{min-height:0;padding:0;border:0;gap:8px;flex-direction:column}
+.quotes-signature-row .github-signature{width:100%;max-width:160px}
+@media(max-width:600px){.quotes-signature-row{grid-template-columns:1fr;gap:14px}.quotes-signature-row .github-signatures{flex-direction:row;justify-content:flex-end}.quotes-signature-row .github-signature{width:40%;max-width:140px}}
+</style>
 </head>
 	
 	<body class="is-preload">
@@ -1005,9 +1039,9 @@
 
 						<div class="intro-card">
 							<p class="intro-text">
-							I am a second-year Integrated M.Phil - Ph.D Candidate at the School of AI & DS, University of Science and Technology of China (USTC), advised by <a href="https://www.researchgate.net/profile/Jingrun-Chen-2">Prof. Jingrun Chen</a>. 
-							If everything goes well, I will transfer to the USTC - CityUHK Joint Ph.D Degree Program in Fall 2027, co-advised by <a href="https://scholar.google.com/citations?user=C2iR3xUAAAAJ&amp;hl=en">Prof. Gerhard Petrus Hancke</a> and <a href="https://www.cs.cityu.edu.hk/~rynson/">Prof. Rynson W. H. Lau</a> at Department of Computer Science.
-							I received my B.Eng degree with Honors in Computer Science from Yuan Longping Academy at Southwest University (SWU) in 2025. 
+							I am a second-year Integrated M.Phil - Ph.D Candidate at the School of AI & DS, University of Science and Technology of China (<a class="school-inline" href="https://www.ustc.edu.cn/" target="_blank" rel="noopener noreferrer" title="University of Science and Technology of China" aria-label="University of Science and Technology of China"><img src="images/中国科学技术大学校徽.jpg" alt="" width="20" height="20">USTC</a>), advised by <a href="https://www.researchgate.net/profile/Jingrun-Chen-2">Prof. Jingrun Chen</a>. 
+							If everything goes well, I will transfer to the USTC - <a class="school-inline" href="https://www.cityu.edu.hk/" target="_blank" rel="noopener noreferrer" title="City University of Hong Kong" aria-label="City University of Hong Kong"><img src="images/香港城市大学.png" alt="" width="20" height="20">CityUHK</a> Joint Ph.D Degree Program in Fall 2027, co-advised by <a href="https://scholar.google.com/citations?user=C2iR3xUAAAAJ&amp;hl=en">Prof. Gerhard Petrus Hancke</a> and <a href="https://www.cs.cityu.edu.hk/~rynson/">Prof. Rynson W. H. Lau</a> at Department of Computer Science.
+							I received my B.Eng degree with Honors in Computer Science from Yuan Longping Academy at <a class="school-inline" href="https://www.swu.edu.cn/" target="_blank" rel="noopener noreferrer" title="Southwest University" aria-label="Southwest University"><img src="images/西大校徽矢量图.png" alt="" width="20" height="20">Southwest University</a> in 2025. 
 							</p>
 							<!-- <p class="intro-text">
 								I join Kuaishou KlingAI Research in October 2026 as a Multimodal Video Generation Algorithm Intern on the Embodied AI Foundation Model Team, Video Model Department. I previously held internship positions as Researcher @ miHoYo / HoYoverse, Student Researcher @ Ubisoft La Forge, and Assistant Research Algorithm Engineer @ iFLYTEK Research.
@@ -1020,18 +1054,17 @@
 								I welcome research collaborations and opportunities to exchange ideas. I also welcome conversations about science fiction, classical Chinese poetry, and music composition. I am especially fond of Yu Li (李煜) and Guan Qin (秦观), and often return to <em>Renjian Cihua</em> (人间词话).
 								My favorite films are <em>Dune</em> and <em>Ready Player One</em>. I hope to one day build an OASIS of my own. 
 								<br>
-								<br>“胭脂泪，相留醉，几时重。自是人生长恨水长东。”
+								</p><div class="quotes-signature-row"><div class="intro-text quote-lines">“胭脂泪，相留醉，几时重。自是人生长恨水长东。”
 								<br>“尽道有些堪恨处，无情，任是无情也动人。”
-								<br>"This is the 'OASIS' world, where the only limit is your own imagination."
-							</p>
-
-						<div class="github-stats">
-							<div class="github-profile-card">
-								<img class="github-stats-card" src="https://github-readme-stats-one-bice.vercel.app/api?username=haoqinhong&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide=prs" alt="Haoqin Hong GitHub stats" />
-								<div class="github-signatures">
+								<br>"This is the 'OASIS' world, where the only limit is your own imagination."</div><div class="github-signatures">
 									<img src="images/中文名字-洪浩亲.png" alt="Chinese signature" class="github-signature" />
 									<img src="images/英文名字-HaoqinHong.png" alt="English signature" class="github-signature" />
-								</div>
+								</div></div>
+
+						<div class="github-stats">
+							<div class="github-profile-card research-profile-card">
+								<div class="research-demos"><figure><img src="images/research/demo1.gif" alt="Rendering research demonstration" loading="lazy"><figcaption><strong>Rendering</strong><p>Reconstruct geometry, appearance and dynamic states.</p></figcaption></figure><figure><img src="images/research/demo2.gif" alt="Simulation research demonstration" loading="lazy"><figcaption><strong>Simulation</strong><p>Model material responses and predict physical interactions.</p></figcaption></figure><figure><img src="images/research/demo3.gif" alt="Planning research demonstration" loading="lazy"><figcaption><strong>Planning</strong><p>Use physical knowledge to guide action planning.</p></figcaption></figure></div>
+								
 							</div>
 						</div>
 
@@ -1068,6 +1101,12 @@
 									
 							<h2>Publications </h2> &nbsp; (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)
 							<h4 style="color: #000000aa; font-weight: 200;">A total of 6 publications, including 4 as the first author.</h4>
+<div class="publication-filters" role="group" aria-label="Filter publications by authorship" hidden>
+<button type="button" data-filter="all" aria-pressed="true">All</button>
+<button type="button" data-filter="first" aria-pressed="false">First Author (including first-listed co-first authors)</button>
+<label class="cofirst-option"><input id="include-cofirst" type="checkbox" disabled> Include Other Co-first Authors</label>
+<span class="publication-count" aria-live="polite"></span>
+</div>
 
 							
 							<div class="intro-card awards-card">
@@ -1670,5 +1709,6 @@
 				})();
 			</script>
 
-	</body>
+	<script src="assets/js/publication-filters.js"></script>
+</body>
 </html>
