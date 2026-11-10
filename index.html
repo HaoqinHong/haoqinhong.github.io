@@ -992,7 +992,12 @@
 .quotes-signature-row .github-signature{width:100%;max-width:120px}
 @media(max-width:600px){.quotes-signature-row{grid-template-columns:1fr;gap:14px}.quotes-signature-row .github-signatures{flex-direction:row;justify-content:flex-end}.quotes-signature-row .github-signature{width:32%;max-width:110px}}
 </style>
-</head>
+<style>
+.publication-metrics{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:.6rem 0}.publication-metrics a{border:0;display:inline-flex}.publication-metrics img{height:20px;width:auto}
+.publication-scroll{overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#aec5d9 transparent;padding-right:8px;max-height:var(--ten-paper-height,none)}
+.publication-scroll:focus-visible{outline:2px solid #2f6fa7;outline-offset:4px}
+</style>
+<style>.publication-metrics .contribution-badge{display:inline-flex;height:20px;overflow:hidden;border-radius:3px;color:white;font:11px/20px Verdana,sans-serif}.contribution-badge span{padding:0 6px;background:#555}.contribution-badge #contributed-stars{background:#347cab}</style></head>
 	
 	<body class="is-preload">
 
@@ -1099,7 +1104,11 @@
 						<h1 class="section-main-title">Publications & Awards</h1><br>
 									
 							<h2>Publications </h2> &nbsp; (<sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author, <sup>‡</sup> Project leader)
-							<h4 style="color: #000000aa; font-weight: 200;">A total of 6 publications, including 4 as the first author.</h4>
+							<h4 style="color: #000000aa; font-weight: 200;">A total of 6 publications, including 4 as the first author (including first-listed co-first authors).</h4>
+<div class="publication-metrics">
+<a href="https://scholar.google.com/citations?user=JhgyIPsAAAAJ" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgoogle-scholar-badge.vercel.app%2Fcitations%3Fuser%3DJhgyIPsAAAAJ&amp;style=flat&amp;label=Google%20Scholar%20citations&amp;logo=googlescholar" alt="Google Scholar citations"></a>
+<a class="contribution-badge" href="https://github.com/HaoqinHong" target="_blank" rel="noopener noreferrer"><span>GitHub stars</span><span id="contributed-stars" aria-live="polite">…</span></a>
+</div>
 <div class="publication-filters" role="group" aria-label="Filter publications by authorship" hidden>
 <button type="button" data-filter="all" aria-pressed="true">All</button>
 <button type="button" data-filter="first" aria-pressed="false">First Author (including first-listed co-first authors)</button>
@@ -1709,5 +1718,6 @@
 			</script>
 
 	<script src="assets/js/publication-filters.js"></script>
-</body>
+<script src="assets/js/publication-scroll.js"></script>
+<script src="assets/js/contributed-stars.js"></script></body>
 </html>
